@@ -14,18 +14,18 @@
 :---: | :---
 
 
-| окружение            | endpoint               | требуется cid? | описание                                                  |
-|----------------------|------------------------|----------------|-----------------------------------------------------------|
-|                      | /images                |                |  получение списка зарегистрированных gold-образов         |
-|                      | /cluster               |    cid:<cid>   |  сводная информация о всех ваших окружениях               |
-| jail, VM, kubernetes | /api/v1/create/`<X>`   |    cid:<cid>   |  создать новое окружение <X>                              | 
-| jail, VM, kubernetes | /api/v1/status/`X`     |    cid:<cid>   |  сводная информация по окружению <X>                      | 
-| jail, VM, kubernetes | /api/v1/start/<X>      |    cid:<cid>   |  запустить окружение <X>, если оно в состоянии 'stopped'  | 
-| jail, VM, kubernetes | /api/v1/stop/<X>       |    cid:<cid>   |  остановить окружение <X>, если оно в состоянии 'running' |
-| jail, VM, kubernetes | /api/v1/destroy/<X>    |    cid:<cid>   |  уничтожить окружение <X>                                 |
-| kubernetes           | /api/v1/kubeconfig/<X> |    cid:<cid>   |  получить kubeconfig кластера <X>, для ~/.kube/config     |
+| окружение            | endpoint                 | требуется cid?   | описание                                                        |
+|----------------------|--------------------------|------------------|-----------------------------------------------------------------|
+|                      | /images                  |                  |  получение списка зарегистрированных gold-образов               |
+|                      | /cluster                 |    cid:`<cid>`   |  сводная информация о всех ваших окружениях                     |
+| jail, VM, kubernetes | /api/v1/create/`<X>`     |    cid:`<cid>`   |  создать новое окружение `<X>`                                  | 
+| jail, VM, kubernetes | /api/v1/status/`<X>`     |    cid:`<cid>`   |  сводная информация по окружению `<X>`                          | 
+| jail, VM, kubernetes | /api/v1/start/`<X>`      |    cid:`<cid>`   |  запустить окружение `<X>`, если оно в состоянии 'stopped'      | 
+| jail, VM, kubernetes | /api/v1/stop/`<X>`       |    cid:`<cid>`   |  остановить окружение `<X>`, если оно в состоянии 'running'     |
+| jail, VM, kubernetes | /api/v1/destroy/`<X>`    |    cid:`<cid>`   |  уничтожить окружение `<X>`                                     |
+| kubernetes           | /api/v1/kubeconfig/`<X>` |    cid:`<cid>`   |  получить kubeconfig кластера `<X>`, для **~/.kube/config**     |
 
-Подключая новые плагины и расширяя API endpoints, вы можете строить решения любой сложности и любых возможностей.
+:construction: Подключая новые плагины и расширяя API endpoints, вы можете строить решения любой сложности и любых возможностей. :construction:
 
 
 ---
