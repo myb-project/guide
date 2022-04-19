@@ -21,10 +21,10 @@ MyB является sattelite-проектом (как демонстрация
 
 Проверенные в работе ОС и дистрибутивы (но не ограниченны этим списком):
 
-- **Linux**: Ubuntu, Debian, CentOS, Rocky, Oracle;
-- **BSD**: FreeBSD, OpenBSD, NetBSD, DragonflyBSD;
-- **Windows**: Windows server;
-- **Other**: SmartOS, Android x64;
+- **Linux**: [Ubuntu](https://ubuntu.com/), [Debian](https://www.debian.org/), [CentOS](https://www.centos.org/), [Rocky](https://rockylinux.org/), [Oracle Linux](https://www.oracle.com/linux/) и т.д.;
+- **BSD**: [FreeBSD](https://www.freebsd.org/), [OpenBSD](https://www.openbsd.org), [NetBSD](https://netbsd.org), [DragonflyBSD](https://dragonflybsd.org) и т.д;
+- **Windows**: [Windows server](https://www.microsoft.com/en-us/windows-server);
+- **Other**: [SmartOS](https://www.joyent.com/smartos), [Android x64](https://www.android-x86.org/) и т.д.;
 
 MyB предоставляет только API, если вы ищите WEB интерфейс для работы с 'bhyve/jail', обратите внимание проект [ClonOS](https://clonos.convectix.com/) , также являющийся полностью opensource и BSD-licensed sattite-проектом CBSD.
 
