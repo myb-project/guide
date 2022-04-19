@@ -43,19 +43,18 @@ $
 
 Аналогичный фильтр по доступу к не публичным endpoint API может быть достигнут на уровне перечисления публичных ключей ([как мы помним](api.md), в инсталляции по-умолчанию они являются источником ClientID, **cid** ).
 
-![image](https://user-images.githubusercontent.com/926409/163998713-bb93af45-a450-4d80-bf1e-54c896d44200.png)
+![image](https://user-images.githubusercontent.com/926409/163996796-e046ed4b-c8ba-43f2-8eba-4168bd283638.png)
 
 Вставляйте публичные ключи OpenSSH (полный формат: '<тип ключа> <payload> <comment>') - один ключ на одну строчку:
 
-![image](https://user-images.githubusercontent.com/926409/163997697-1aa6bf73-b078-4de9-977b-c531d961b2bf.png)
+![image](https://user-images.githubusercontent.com/926409/163998713-bb93af45-a450-4d80-bf1e-54c896d44200.png)
 
 После сохранения списка и включения ACL, попытки работы через CID неизвестных ключей обслуживаться не будут:
 
 ![image](https://user-images.githubusercontent.com/926409/163998402-063cf00f-a036-43cf-8922-e3df83209e6f.png)
 
 
-
-Также, ACL по API и PUBKEY не взаимозаменяемые и могут комбинироваться.
+:information_source: FYI: ACL по API и PUBKEY не взаимозаменяемые и могут комбинироваться.
 
 
 ---
