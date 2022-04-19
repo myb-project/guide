@@ -70,7 +70,7 @@ Components:
 * [Сетевые профили](ru/netprofile.md)
 * [Базовые эндпоинты API](ru/api.md)
 * [ACL и безопасность](ru/acl.md)
-* [Список образов](ru/images.md)
+* [Список GOLD образов](ru/images.md)
 * [Работа с jail (curl)](ru/jail_curl.md)
 * [Работа с ВМ (curl)](ru/bhyve_curl.md)
 * [Работа с Kubernetes (curl)](ru/k8s_curl.md)
