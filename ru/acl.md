@@ -43,7 +43,7 @@ $
 
 Аналогичный фильтр по доступу к не публичным endpoint API может быть достигнут на уровне перечисления публичных ключей ([как мы помним](api.md), в инсталляции по-умолчанию они являются источником ClientID, **cid** ).
 
-![image](https://user-images.githubusercontent.com/926409/163996796-e046ed4b-c8ba-43f2-8eba-4168bd283638.png)
+![image](https://user-images.githubusercontent.com/926409/163998713-bb93af45-a450-4d80-bf1e-54c896d44200.png)
 
 Вставляйте публичные ключи OpenSSH (полный формат: '<тип ключа> <payload> <comment>') - один ключ на одну строчку:
 
