@@ -36,10 +36,10 @@
 
 Часть параметров также является обязательными, но в минимальном payload опущены, поскольку по-умолчанию выставлены наиболее подходящие параметры.
 
-Например, сохраните вышеупомянутый payload в качестве k8s.json и отправьте запрос на создание кластера с именем **'k1'**:
+Например, сохраните вышеупомянутый payload в качестве k8s.json и отправьте запрос на создание кластера с именем **'test1'**:
 
 ```
-curl -X POST -H "Content-Type: application/json" -d @k8s.json http://HOST/api/v1/create/k1
+curl -X POST -H "Content-Type: application/json" -d @k8s.json http://HOST/api/v1/create/test1
 ```
 
 
@@ -114,7 +114,7 @@ curl -X POST -H "Content-Type: application/json" -d @k8s.json http://HOST/api/v1
 > 90af7aa8bc164240521753a105df6a05
 
 2) Удалите контейнер с использованием вашего токена:
-> curl -H cid:90af7aa8bc164240521753a105df6a05 http://HOST/api/v1/destroy/k1
+> curl -H cid:90af7aa8bc164240521753a105df6a05 http://HOST/api/v1/destroy/test1
 
 
 ---
