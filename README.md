@@ -37,7 +37,7 @@ The high speed of virtual infrastructure initialization on demand makes the prod
 
 1) creation of a VM of any configuration (RAM/vCPU/Storage) and launch is carried out within ~5 seconds; depending on the tuning of the boot parameters and the boot speed of the guest to be able to accept RDP or SSH within ~35 seconds (without modifying the `grub` bootloader timeout) [^1]
 
-![vmtime1](https://user-images.githubusercontent.com/926409/164331165-23f261f6-a77c-46fe-bcbf-e1bf1df8254f.png)
+![vmup1](https://user-images.githubusercontent.com/926409/165381489-f7a83818-ef09-4d3c-8044-8f91bab488bb.png)
 
 2) creation of a Kubernetes cluster, launch and the ability to accept API requests: ~30 seconds for a single-master and 1 minute 20 seconds for a cluster with any number of master/worker [^1], [^2]
 
