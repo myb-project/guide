@@ -59,4 +59,4 @@ Typically, image names characterize the image of the OS distribution:
 
 ---
 
-Дальше: [Работа с jails (curl)](jail_curl.md)
+Next: [Working with jails (curl)](jail_curl.md)
