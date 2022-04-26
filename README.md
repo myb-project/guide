@@ -2,7 +2,6 @@
 
 <p align="center">
   <span>English</span> |
-  <a href="/README.md">English</a> |
   <a href="/README.es.md">Español</a> |
   <a href="/README.fr.md">Français</a> |
   <a href="/README.de.md">Deutsch</a> |
