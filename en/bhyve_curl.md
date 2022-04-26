@@ -1,18 +1,18 @@
-# Работа с bhyve VM (curl)
+# Working with bhyve VM (curl)
 
-## Описание
+## Description
 
-Большинство образов, которые вы можете использовать в MyB, являются образами виртуальных машин для запуска в гипервизоре bhyve.
-Это полноценный высокопроизводительный гипервизор второго типа, поставляемого с FreeBSD ОС.
+Most of the images you can use in MyB are virtual machine images to run in the bhyve hypervisor.
+This is a full-fledged high-performance hypervisor of the second type, supplied with the FreeBSD OS.
 
-В зависимости от профиля и сетевой архитектуры, вы можете создавать виртуальные машины с одним или несколькими виртуальными интерфейсами,
-с внешним или приватным адресом, получить как IPv4, так и IPv6.
+Depending on the profile and network architecture, you can create virtual machines with one or more virtual interfaces,
+with an external or private address, get both IPv4 and IPv6.
 
-## Создание bhyve VM
+## Create a bhyve VM
 
-Для создания контейнера, используйте [endpoint](api.md): **'/api/v1/create/'**.
+To create a container, use [endpoint](api.md): **'/api/v1/create/'**.
 
-Минимальный payload для создания окружения на базе bhyve VM:
+Minimum payload to create an environment based on bhyve VM:
 
 ```
 {
@@ -24,7 +24,7 @@
 }
 ```
 
-, где 'debian11' - это один из доступных образов из [Списка образов](images.md). Например, создание виртуальной машины debian11:
+, where 'debian11' is one of the available images from the [List of Images](images.md). For example, creating a Debian virtual machine:
 
 1)
 ```
@@ -41,38 +41,33 @@ cat > debian11.json <<EOF
 2)
 > curl --no-progress-meter -X POST -H "Content-Type: application/json" -d @debian11.json http://HOST/api/v1/create/vm1
 
-Обратите внимание, что время на создание первой виртуальной машины каждого профиля зависит от наличия 'образа' и качества вашего Internet соединения. 
-Рекомендуется через запуск 'bhyve VM' в  шелл оболочки администраторской консоли сначала получить образ. Если вы этого не сделаете, при запросе на /create,
-система автоматически сначала выкачает нужный образ, затем сконвертирует в ZFS Volume и только после этого создаст и запустит ВМ. Все последующие
-запуски ВМ определенного образа будут происходить мгновенно.
+Please note that the time to create the first virtual machine of each profile depends on the availability of the 'image' and the quality of your Internet connection.
+It is recommended that you first get the image by running 'bhyve VM' in the shell shell of the admin console. If you don't, when query for /create,
+the system will automatically first download the desired image, then convert it to ZFS Volume, and only after that it will create and start the VM. All subsequent
+VM launches of a certain image will occur instantly.
 
 
-## Статус bhyve VM
+## bhyve VM status
 
-Для просмотра информации по виртуальной машине, используйте свой token/CID и [endpoint](api.md): **'/api/v1/status/'**, например:
+To view information about the virtual machine, use your token/CID and [endpoint](api.md): **'/api/v1/status/'**, for example:
 
-1) Если не знаете свой токен, получите его из вашего pubkey:
+1) If you don't know your token, get it from your pubkey:
 >  md5sum -qs 'ssh-ed25519 AAAA..XXX your@localhost'
 > 90af7aa8bc164240521753a105df6a05
 
-2) Посмотреть информацию по виртуальной машине 'vm1', используя токен:
+2) View information on virtual machine 'vm1' using token:
 > curl -H cid:90af7aa8bc164240521753a105df6a05 http://HOST/api/v1/status/vm1
 
-Среди информации по статусу окружения, вы можете найти порт (он может быть динамический, если используется expose портов) и IP адрес для соединения в контейнер через SSH.
+Among the environment status information, you can find the port (it can be dynamic if ports are exposed) and the IP address to connect to the container via SSH.
 
 
-## Удаление bhyve VM
+## Removing bhyve VM
 
-Для удаления bhyve VM, используйте свой token/CID и [endpoint](api.md): **'/api/v1/status/'**, например:
+To delete bhyve VM, use your token/CID and [endpoint](api.md): **'/api/v1/status/'**, for example:
 
-1) Если не знаете свой токен, получите его из вашего pubkey:
->  md5sum -qs 'ssh-ed25519 AAAA..XXX your@localhost'
-> 90af7aa8bc164240521753a105df6a05
-
-2) Удалите контейнер с использованием вашего токена:
 > curl -H cid:90af7aa8bc164240521753a105df6a05 http://HOST/api/v1/destroy/vm1
 
 
 ---
 
-Дальше: [Работа с Kubernetes (curl)](k8s_curl.md)
+Next: [Working with Kubernetes (curl)](k8s_curl.md)
