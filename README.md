@@ -47,7 +47,7 @@ The high speed of virtual infrastructure initialization on demand makes the prod
 
 The product is built on completely alternative technologies, the code of which is distributed under the most liberal BSD/MIT licenses; none of the components and layers is affiliated with any company, in particular, the product is based on completely open-source projects:
 
-- wonderful OS [FreeBSD](https://www.freebsd.org);
+- wonderful [FreeBSD](https://www.freebsd.org) OS;
 - high performance [bhyve](https://en.wikipedia.org/wiki/Bhyve) hypervisor;
 - [NETMAP](https://man.freebsd.org/netmap/4)/[VALE](https://man.freebsd.org/vale/4) virtual switch;
 - virtual environment manager [CBSD](https://cbsd.io);
