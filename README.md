@@ -18,7 +18,7 @@
 
 MyB is a software for working with virtual environments through the simplest API, mainly for use in a Trusted environment and/or integration/building a private cloud, as well as building your own hyperconverged cluster.
 
-MyB is a sattelite project (as a demo of one of the goals) of the non-commercial project [CBSD](https://cbsd.io) and currently uses image libraries and infrastructure kept up-to-date with funds from [CBSD project donors](https: //www.patreon.com/clonos) as one of the outcomes of project development funding.
+MyB is a sattelite project (as a demo of one of the goals) of the non-commercial project [CBSD](https://cbsd.io) and currently uses image libraries and infrastructure kept up-to-date with funds from [CBSD project donors](https://www.patreon.com/clonos) as one of the outcomes of project development funding.
 
 OS and distributions tested in operation (but not limited to this list):
 
