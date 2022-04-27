@@ -11,7 +11,7 @@
 
 ---
 
-:information_source: This guide covers the administration and use of the [MyBee](https://myb.convectix.com) (**MyB**) distribution for cloud virtual environments based on the [bhyve](https:// en.wikipedia.org/wiki/Bhyve) hypervisor. The distribution kit is free, without any restrictions on use in your needs.
+:information_source: This guide covers the administration and use of the [MyBee](https://myb.convectix.com) (**MyB**) distribution for cloud virtual environments based on the [bhyve](https://en.wikipedia.org/wiki/Bhyve) hypervisor. The distribution kit is free, without any restrictions on use in your needs.
 
 ---
 
