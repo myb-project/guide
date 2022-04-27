@@ -1,4 +1,4 @@
-# MyBee - The most simplified API for creating and destroying K8S & cloud VM
+# MyBee - The most simplified API for creating and destroying K8S & cloud VMs
 
 <p align="center">
   <span>English</span> |
@@ -15,9 +15,9 @@
 
 ---
 
-MyB is a software for working with virtual environments through the simplest API, mainly for use in a Trusted environment and/or integration/building a private cloud, as well as building your own hyperconverged cluster.
+MyB is a software for working with virtual environments through the simplest API, mainly for use in a trusted environment and/or integration/building of a private cloud, as well as building your own hyperconverged cluster.
 
-MyB is a sattelite project (as a demo of one of the goals) of the non-commercial project [CBSD](https://cbsd.io) and currently uses image libraries and infrastructure kept up-to-date with funds from [CBSD project donors](https://www.patreon.com/clonos) as one of the outcomes of project development funding.
+MyB is a satellite project (as a demo of one of the goals) of the non-commercial project [CBSD](https://cbsd.io) and currently uses image libraries and infrastructure kept up-to-date with funds from [CBSD project donors](https://www.patreon.com/clonos) as one of the outcomes of project development funding.
 
 OS and distributions tested in operation (but not limited to this list):
 
@@ -26,47 +26,47 @@ OS and distributions tested in operation (but not limited to this list):
 - **Windows**: [Windows server](https://www.microsoft.com/en-us/windows-server);
 - **Other**: [SmartOS](https://www.joyent.com/smartos), [Android x64](https://www.android-x86.org/) and so on;
 
-MyB only provides an API, if you are looking for a WEB interface to work with 'bhyve/jail', check out the [ClonOS](https://clonos.convectix.com/) project, which is also a fully opensource and BSD-licensed sattite project by CBSD.
+MyB only provides an API, if you are looking for a WEB interface to work with bhyve or jails, check out the [ClonOS](https://clonos.convectix.com/) project, which is also a fully open-source and BSD-licensed satellite project of CBSD.
 
-## MyB overwiew
+## MyB Overwiew
 
-Despite the fact that MyB can run any custom installation ISO images, the product is primarily focused on working only with cloud images. An important part of the project is the provision of tools for easily creating your own cloud images with any set of applications and extensibility of the API.
+Despite the fact that MyB can run any custom installation ISO images, the product is primarily focused on working only with cloud images. An important part of the project are the provisioning tools for easily creating your own cloud images with any set of applications and extensibility of the API.
 
 The high speed of virtual infrastructure initialization on demand makes the product unique in terms of the basis for building SaaS/FaaS platforms. For example, the average timing of creating and launching environments to the state to process remote user requests:
 
-1) creation of a VM of any configuration (RAM/vCPU/Storage) and launch is carried out within ~5 seconds; depending on the tuning of the boot parameters and the boot speed of the guest to be able to accept RDP or SSH within ~35 seconds (without modifying the `grub` bootloader timeout) [^1]
+1) creation of a VM of any configuration (RAM/vCPU/Storage) and launch is carried out within ~5 seconds; depending on the tuning of the boot parameters and the boot speed of the guest, the machine might be able to accept RDP or SSH connections after as little as ~35 seconds (without modifying the `grub` bootloader timeout) [^1]
 
 ![vmup1](https://user-images.githubusercontent.com/926409/165381489-f7a83818-ef09-4d3c-8044-8f91bab488bb.png)
 
-2) creation of a Kubernetes cluster, launch and the ability to accept API requests: ~30 seconds for a single-master and 1 minute 20 seconds for a cluster with any number of master/worker [^1], [^2]
+2) creation and launch of a Kubernetes cluster with the ability to accept API requests: ~30 seconds for a single-master and ~1 minute 20 seconds for a cluster with any number of master/worker nodes [^1], [^2]
 
 [^1]: - in the absence of an overcommit at the physical level;
 [^2]: - 30 seconds spent on bootstrap 'etcd' service if master node > 1;
 
 ![kubetime](https://user-images.githubusercontent.com/926409/165322452-96f740bb-d7af-4970-affc-056432a17c46.png)
 
-The product is built on completely alternative technologies, the code of which is distributed under the most liberal BSD/MIT licenses; none of the components and layers is affiliated with any company, in particular, the product is based on completely open-source projects:
+The product is built on completely alternative technologies, the code of which is distributed under the most liberal BSD/MIT licenses; none of the components and layers is affiliated with any company. In fact the whole product is based entirely on open-source projects:
 
-- wonderful [FreeBSD](https://www.freebsd.org) OS;
-- high performance [bhyve](https://en.wikipedia.org/wiki/Bhyve) hypervisor;
-- [NETMAP](https://man.freebsd.org/netmap/4)/[VALE](https://man.freebsd.org/vale/4) virtual switch;
-- virtual environment manager [CBSD](https://cbsd.io);
+- The wonderful [FreeBSD](https://www.freebsd.org) OS;
+- The high performance [bhyve](https://en.wikipedia.org/wiki/Bhyve) hypervisor;
+- The [NETMAP](https://man.freebsd.org/netmap/4)/[VALE](https://man.freebsd.org/vale/4) virtual switch;
+- The [CBSD](https://cbsd.io) virtual environment manager;
 
-## System requirements
+## System Requirements
 
-Any physical (bare metal) server with an Intel/AMD x86-64 processor that supports virtualization and POPCNT instructions and runs FreeBSD 13.1-RELEASE is suitable for MyBee.
+Any physical (bare metal) server with an Intel/AMD x86-64 processor that supports virtualization and POPCNT instructions is suitable for MyBee if it runs FreeBSD 13.1-RELEASE.
 
-Theoretically, [working on ARM64 architecture is possible](https://github.com/freebsd-upb/freebsd-src/tree/projects/bhyvearm64). There are currently no ARM64-based servers in the CBSD infrastructure, but work on the port can be done when ARM64-based hardware is handed over to the project.
+In thaory, [running MyB on the ARM64 architecture is possible](https://github.com/freebsd-upb/freebsd-src/tree/projects/bhyvearm64). However there are currently no ARM64-based servers in the CBSD infrastructure, but work on the port can be done when ARM64-based hardware is made accessible to the project.
 
-In [some cases](https://wiki.freebsd.org/bhyve#Q:_Can_I_run_multiple_bhyve_hosts_under_VMware_nested_VT-x_EPT.3F) MyB can be run in a virtualized environment, however this is not recommended and has not been tested by the MyB authors. However, if the 'bhyve' hypervisor fails, you can create containers based on FreeBSD jails, but this is most likely not what you want from MyBee ;-)
+In [some cases](https://wiki.freebsd.org/bhyve#Q:_Can_I_run_multiple_bhyve_hosts_under_VMware_nested_VT-x_EPT.3F) MyB can be run in a virtualized environment, however this is not recommended and has not been tested by the MyB authors. If the bhyve hypervisor cannot be used, you can still create containers based on FreeBSD jails, but this is most likely not what you want from MyBee ;-)
 
 * Minimum RAM requirements: 4 GB RAM;
 * Minimum HDD/SSD requirements: 20 GB (for kubernetes cluster, using SSD/NVME is highly recommended);
 * Availability of IPv4;
 * the presence of IPv6 (optional, but highly recommended);
-* Access to the Internet (80/443 ports), since MyBee will download (one-time) gold-images for those operating systems whose environment you have requested;
+* Access to the Internet (80/443 ports), since MyBee will download (only once) gold-images for those operating systems whose environment you have requested;
 
-The creation of environments is managed through RestAPI (for example, the command line and the curl utility are enough), as well as through a thin client available for modern operating systems. In the future - support for Terraform and a mobile application.
+The creation of environments is managed through a RestAPI (i.e. the command line and the curl utility are enough to control it!), as well as through a thin client available for modern operating systems. For the future support for Terraform and a mobile application may become available.
 
 Components:
 
@@ -75,7 +75,7 @@ Components:
 
 ## MyB Handbook
 
-* [Getting and installing MyBee](en/get-myb.md)
+* [Getting and installing MyB](en/get-myb.md)
 * [CLI/shell](en/shell.md)
 * [Configuring Network Interfaces](en/network.md)
 * [Network profiles](en/netprofile.md)
