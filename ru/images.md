@@ -24,6 +24,7 @@ For example:
     "k8s",
     "netbsd9",
     "openbsd7",
+    "openbsd70",
     "opnsense21",
     "oracle7",
     "oracle8",
@@ -49,7 +50,7 @@ Typically, image names characterize the image of the OS distribution:
 |           jail            | Образ FreeBSD rootfs для создания контейнеров на базе FreeBSD jail, представляет из себя архив base.txz с официального сайта проекта FreeBSD |
 |           k8s             | Образ для разворачивания Kubernetes инстансов                      |
 |         netbsdX           | NetBSD OS                                                          |
-|         openbsdX          | OpenBSD OS                                                         |
+|         openbsdX          | OpenBSD OS: 'openbsd7' for LATEST (7.1), 'openbsd70' - 7.0         |
 |         opnsenseX         | OPNSense, please open URL after VM start: http:/IP                 |
 |          oracleX          | Linux Oracle                                                       |
 |          rockyX           | Linux Rocky                                                        |
