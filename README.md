@@ -15,9 +15,9 @@
 
 ---
 
-MyB is a software for working with virtual environments through the simplest API, mainly for use in a trusted environment and/or integration/building of a private cloud, as well as building your own hyperconverged cluster.
+MyBee is a software for working with virtual environments through the simplest API, mainly for use in a trusted environment and/or integration/building of a private cloud, as well as building your own hyperconverged cluster.
 
-MyB is a satellite project (as a demo of one of the goals) of the non-commercial project [CBSD](https://cbsd.io) and currently uses image libraries and infrastructure kept up-to-date with funds from [CBSD project donors](https://www.patreon.com/clonos) as one of the outcomes of project development funding.
+MyBee is a satellite project (as a demo of one of the goals) of the non-commercial project [CBSD](https://cbsd.io) and currently uses image libraries and infrastructure kept up-to-date with funds from [CBSD project donors](https://www.patreon.com/clonos) as one of the outcomes of project development funding.
 
 OS and distributions tested in operation (but not limited to this list):
 
@@ -26,11 +26,11 @@ OS and distributions tested in operation (but not limited to this list):
 - **Windows**: [Windows server](https://www.microsoft.com/en-us/windows-server);
 - **Other**: [SmartOS](https://www.joyent.com/smartos), [Android x64](https://www.android-x86.org/) and so on;
 
-MyB only provides an API, if you are looking for a WEB interface to work with bhyve or jails, check out the [ClonOS](https://clonos.convectix.com/) project, which is also a fully open-source and BSD-licensed satellite project of CBSD.
+MyBee only provides an API, if you are looking for a WEB interface to work with bhyve or jails, check out the [ClonOS](https://clonos.convectix.com/) project, which is also a fully open-source and BSD-licensed satellite project of CBSD.
 
-## MyB Overwiew
+## MyBee Overwiew
 
-Despite the fact that MyB can run any custom installation ISO images, the product is primarily focused on working only with cloud images. An important part of the project are the provisioning tools for easily creating your own cloud images with any set of applications and extensibility of the API.
+Despite the fact that MyBee can run any custom installation ISO images, the product is primarily focused on working only with cloud images. An important part of the project are the provisioning tools for easily creating your own cloud images with any set of applications and extensibility of the API.
 
 The high speed of virtual infrastructure initialization on demand makes the product unique in terms of the basis for building SaaS/FaaS platforms. For example, the average timing of creating and launching environments to the state to process remote user requests:
 
@@ -56,9 +56,9 @@ The product is built on completely alternative technologies, the code of which i
 
 Any physical (bare metal) server with an Intel/AMD x86-64 processor that supports virtualization and POPCNT instructions is suitable for MyBee if it runs FreeBSD 13.1-RELEASE.
 
-In thaory, [running MyB on the ARM64 architecture is possible](https://github.com/freebsd-upb/freebsd-src/tree/projects/bhyvearm64). However there are currently no ARM64-based servers in the CBSD infrastructure, but work on the port can be done when ARM64-based hardware is made accessible to the project.
+In thaory, [running MyBee on the ARM64 architecture is possible](https://github.com/freebsd-upb/freebsd-src/tree/projects/bhyvearm64). However there are currently no ARM64-based servers in the CBSD infrastructure, but work on the port can be done when ARM64-based hardware is made accessible to the project.
 
-In [some cases](https://wiki.freebsd.org/bhyve#Q:_Can_I_run_multiple_bhyve_hosts_under_VMware_nested_VT-x_EPT.3F) MyB can be run in a virtualized environment, however this is not recommended and has not been tested by the MyB authors. If the bhyve hypervisor cannot be used, you can still create containers based on FreeBSD jails, but this is most likely not what you want from MyBee ;-)
+In [some cases](https://wiki.freebsd.org/bhyve#Q:_Can_I_run_multiple_bhyve_hosts_under_VMware_nested_VT-x_EPT.3F) MyBee can be run in a virtualized environment, however this is not recommended and has not been tested by the MyBee authors. If the bhyve hypervisor cannot be used, you can still create containers based on FreeBSD jails, but this is most likely not what you want from MyBee ;-)
 
 * Minimum RAM requirements: 4 GB RAM;
 * Minimum HDD/SSD requirements: 20 GB (for kubernetes cluster, using SSD/NVME is highly recommended);
@@ -73,9 +73,9 @@ Components:
 * [FreeBSD OS](https://www.freebsd.org) 13.1+
 * [CBSD](https://cbsd.io) 13.1+
 
-## MyB Handbook
+## MyBee Handbook
 
-* [Getting and installing MyB](en/get-myb.md)
+* [Getting and installing MyBee](en/get-myb.md)
 * [CLI/shell](en/shell.md)
 * [Configuring Network Interfaces](en/network.md)
 * [Network profiles](en/netprofile.md)
