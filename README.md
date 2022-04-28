@@ -38,10 +38,10 @@ The high speed of virtual infrastructure initialization on demand makes the prod
 
 ![vmup1](https://user-images.githubusercontent.com/926409/165381489-f7a83818-ef09-4d3c-8044-8f91bab488bb.png)
 
-2) creation and launch of a Kubernetes cluster with the ability to accept API requests: ~30 seconds for a single-master and ~1 minute 20 seconds for a cluster with any number of master/worker nodes [^1], [^2]
+2) creation and launch of a Kubernetes cluster with the ability to accept API requests: ~30 seconds for a single-master and ~1 minute 20 seconds for a cluster with any number of master/worker nodes. [^1], [^2]
 
 [^1]: - in the absence of an overcommit at the physical level;
-[^2]: - 30 seconds spent on bootstrap 'etcd' service if master node > 1;
+[^2]: - 30 seconds spent on bootstrap `etcd` service if master node > 1;
 
 ![kubetime](https://user-images.githubusercontent.com/926409/165322452-96f740bb-d7af-4970-affc-056432a17c46.png)
 
@@ -66,7 +66,7 @@ In [some cases](https://wiki.freebsd.org/bhyve#Q:_Can_I_run_multiple_bhyve_hosts
 * the presence of IPv6 (optional, but highly recommended);
 * Access to the Internet (80/443 ports), since MyBee will download (only once) gold-images for those operating systems whose environment you have requested;
 
-The creation of environments is managed through a RestAPI (i.e. the command line and the curl utility are enough to control it!), as well as through a thin client available for modern operating systems. For the future support for Terraform and a mobile application may become available.
+The creation of environments is managed through a RestAPI (i.e. the command line and the `curl` utility are enough to control it!), as well as through a thin client available for modern operating systems. For the future support for Terraform and a mobile application may become available.
 
 Components:
 
