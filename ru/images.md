@@ -25,7 +25,7 @@ For example:
     "netbsd9",
     "openbsd7",
     "openbsd70",
-    "opnsense21",
+    "opnsense22",
     "oracle7",
     "oracle8",
     "rocky8",
@@ -39,23 +39,23 @@ The basic MyB installation comes with cloud images supported by the [CBSD](https
 
 Typically, image names characterize the image of the OS distribution:
 
-|           name            |                             description                            |
-| ------------------------- | ------------------------------------------------------------------ |
-|          centosX          | Linux CentOS                                                       |
-|          debianX          | Linux Debian                                                       |
-|        freebsdX_ufs       | FreeBSD with UFS on root                                           |
-|        freebsdX_zfs       | FreeBSD with ZFS on root                                           |
-|          freepbx          | FreePBX (Asterisk VoIP), please open URL after VM start: http://IP |
-|          homeass          | Home Assistant, please open URL after VM start: http://IP:8123     |
+|           name            |                                   description                                  |
+| ------------------------- | ------------------------------------------------------------------------------ |
+|          centosX          | Linux CentOS                                                                   |
+|          debianX          | Linux Debian                                                                   |
+|        freebsdX_ufs       | FreeBSD with UFS on root                                                       |
+|        freebsdX_zfs       | FreeBSD with ZFS on root                                                       |
+|          freepbx          | FreePBX (Asterisk VoIP), please open URL after VM start: http://IP             |
+|          homeass          | Home Assistant, please open URL after VM start: http://IP:8123                 |
 |           jail            | Образ FreeBSD rootfs для создания контейнеров на базе FreeBSD jail, представляет из себя архив base.txz с официального сайта проекта FreeBSD |
-|           k8s             | Образ для разворачивания Kubernetes инстансов                      |
-|         netbsdX           | NetBSD OS                                                          |
-|         openbsdX          | OpenBSD OS: 'openbsd7' for LATEST (7.1), 'openbsd70' - 7.0         |
-|         opnsenseX         | OPNSense, please open URL after VM start: http:/IP                 |
-|          oracleX          | Linux Oracle                                                       |
-|          rockyX           | Linux Rocky                                                        |
-|         ubuntuX           | Linux Ubuntu                                                       |
-|         rabbitmq          | Образ для разворачивания RabbitMQ кластеров                        |
+|           k8s             | Образ для разворачивания Kubernetes инстансов                                  |
+|         netbsdX           | NetBSD OS                                                                      |
+|         openbsdX          | OpenBSD OS: 'openbsd7' for LATEST (7.1), 'openbsd70' - 7.0                     |
+|         opnsenseX         | OPNSense, please open URL after VM start: http:/IP, lg: 'root', pw: 'opnsense' |
+|          oracleX          | Linux Oracle                                                                   |
+|          rockyX           | Linux Rocky                                                                    |
+|         ubuntuX           | Linux Ubuntu                                                                   |
+|         rabbitmq          | Образ для разворачивания RabbitMQ кластеров                                    |
 
 
 ---
