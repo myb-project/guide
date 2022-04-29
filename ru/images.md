@@ -14,6 +14,7 @@ For example:
     "centos9",
     "debian10",
     "debian11",
+    "dflybsd6",
     "freebsd13_ufs",
     "freebsd13_zfs",
     "freebsd14_ufs",
@@ -43,6 +44,7 @@ Typically, image names characterize the image of the OS distribution:
 | ------------------------- | ------------------------------------------------------------------------------ |
 |          centosX          | Linux CentOS                                                                   |
 |          debianX          | Linux Debian                                                                   |
+|         dflybsdX          | DragonFlyBSD OS, HAMMERFS on root                                              |
 |        freebsdX_ufs       | FreeBSD with UFS on root                                                       |
 |        freebsdX_zfs       | FreeBSD with ZFS on root                                                       |
 |          freepbx          | FreePBX (Asterisk VoIP), please open URL after VM start: http://IP             |
