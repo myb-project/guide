@@ -23,10 +23,10 @@ MyBee wird als Satellitenprojekt (als eine Art Demo für eines der Ziele) des ni
 
 Betriebssysteme und Distributionen, deren Betrieb getestet wurde (weitere in dieser Liste nicht aufgeführte sind verfügbar):
 
-- **Linux**: [Ubuntu](https://ubuntu.com/), [Debian](https://www.debian.org/), [CentOS](https://www.centos.org/), [Rocky](https://rockylinux.org/), [Oracle Linux](https://www.oracle.com/linux/) and so on;
-- **BSD**: [FreeBSD](https://www.freebsd.org/), [OpenBSD](https://www.openbsd.org), [NetBSD](https://netbsd.org), [DragonflyBSD](https://dragonflybsd.org) and so on;
+- **Linux**: [Ubuntu](https://ubuntu.com/), [Debian](https://www.debian.org/), [CentOS](https://www.centos.org/), [Rocky](https://rockylinux.org/), [Oracle Linux](https://www.oracle.com/linux/) usw.;
+- **BSD**: [FreeBSD](https://www.freebsd.org/), [OpenBSD](https://www.openbsd.org), [NetBSD](https://netbsd.org), [DragonflyBSD](https://dragonflybsd.org) usw.;
 - **Windows**: [Windows server](https://www.microsoft.com/en-us/windows-server);
-- **Other**: [SmartOS](https://www.joyent.com/smartos), [Android x64](https://www.android-x86.org/) and so on;
+- **Other**: [SmartOS](https://www.joyent.com/smartos), [Android x64](https://www.android-x86.org/) usw.;
 
 MyBee stellt dabei nur eine API bereit; wenn Sie auf der Suche nach einem Web-Interface sind, um mit Bhyve oder Jails zu arbeiten, sehen Sie sich einmal das [ClonOS](https://clonos.convectix.com/)-Projekt an, welches ebenfalls ein vollständig quelloffenes und permissiv lizenziertes (BSD-Lizenz) Satellitenprojekt ist.
 
@@ -79,7 +79,7 @@ Komponenten:
 
 * [Installation von MyBee](de/get-myb.md)
 * [CLI/shell](de/shell.md)
-* [Configuring Network Interfaces](en/network.md) (noch nicht übersetzt)
+* [Konfiguration der Netzwerkschnittstellen](de/network.md)
 * [Network profiles](en/netprofile.md) (noch nicht übersetzt)
 * [Basic API endpoints](en/api.md) (noch nicht übersetzt)
 * [ACLs and Security](en/acl.md) (noch nicht übersetzt)

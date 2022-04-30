@@ -8,7 +8,7 @@ Wenn Sie während der Installation einen unprivilegierten Benutzer angelegt hebe
 
 Verbinden Sie sich stattdessen als Benutzer 'root', Wenn Sie keinen zusätzlichen Benutzer angelegt. In diesem Fall ist der Root-Zugriff per SSH erlaubt.
 
-## MyBee Menü
+## MyBee-Menü
 
 Wenn Sie als 'Root'-Benutzer angemeldet sind, steht Ihnen ein Menü mit Einträgen für typische Aktionen zur Verfügung. Es enthält beispielsweise Menüpunkte zum Ändern der Netzwerkeinstellungen, zum Wechseln der Profile, ACLs, usw.:
 
