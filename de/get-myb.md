@@ -1,4 +1,4 @@
-# Getting and Installing MyBee
+# Installation von MyBee
 
 ## Installation von ISO-Abbild auf einem dedizierten Server
 

@@ -77,7 +77,7 @@ Komponenten:
 
 ## MyBee Handbuch
 
-* [Getting and installing MyBee](en/get-myb.md) (noch nicht übersetzt)
+* [Installation von MyBee](de/get-myb.md)
 * [CLI/shell](en/shell.md) (noch nicht übersetzt)
 * [Configuring Network Interfaces](en/network.md) (noch nicht übersetzt)
 * [Network profiles](en/netprofile.md) (noch nicht übersetzt)
