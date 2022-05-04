@@ -45,7 +45,7 @@ postcreate_minio1()
 ```
 
 and being in the directory with CBSDfile, run the command:
-> cbsd up
+> sudo cbsd up
 
 Also, in one CBSDfile you can describe an unlimited number of environments, for example:
 ```
@@ -89,12 +89,12 @@ postcreate_minio3()
 }
 ```
 
-and create a container, specifying the name: `cbsd up minio2`. If you run `cbsd up` without specifying environment names, 
+and create a container, specifying the name: `sudo cbsd up minio2`. If you run `sudo cbsd up` without specifying environment names, 
 you will create all containers in bulk, and if MyBee consists of several nodes, each subsequent container will be placed on the next host in the list by round-robin (by default).
 
 ##  Jail removal
 
-To remove a jail via CBSDfile, use the `cbsd destroy [env]` command, run in the directory with the CBSDfile.
+To remove a jail via CBSDfile, use the `sudo cbsd destroy [env]` command, run in the directory with the CBSDfile.
 
 ## Execute commands, copy files, login
 
