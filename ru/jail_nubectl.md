@@ -86,7 +86,7 @@ env CLOUD_URL="remote-api1.example.com" CLOUD_KEY=/usr/home/user/.ssh/authorized
 
 ## Demo
 
-[![asciicast](https://asciinema.org/a/492115.svg)](https://asciinema.org/a/492115)
+[![asciicast](https://asciinema.org/a/492150.svg)](https://asciinema.org/a/492150)
 
 ---
 
