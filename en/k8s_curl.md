@@ -120,4 +120,4 @@ To remove kubernetes, use your token/CID and [endpoint](api.md): **'/api/v1/stat
 
 ---
 
-Next: [Working with jail (CBSDfile)](jail_cbsdfile.md)
+Next: [Working with jail (nubectl)](jail_nubectl.md)
