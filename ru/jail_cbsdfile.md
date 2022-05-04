@@ -107,6 +107,10 @@ postcreate_minio3()
 |                   |  - из jail в ваше окружение: cbsd jscp <env>:<remote_file> <local-file>   |
 | cbsd status [env] | показать статус окружений                                                 |
 
+## Demo
+
+[![asciicast](https://asciinema.org/a/492169.svg)](https://asciinema.org/a/492169)
+
 ---
 
 Дальше: [Работа с bhyve (CBSDfile)](bhyve_cbsdfile.md)

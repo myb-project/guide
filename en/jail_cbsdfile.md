@@ -109,6 +109,11 @@ While in the directory with the CBSDfile, you can perform various operations on 
 |                   |  - from jail into your environment: cbsd jscp <env>:<remote_file> <local-file> |
 | cbsd status [env] | show environment(s) status                                                     |
 
+
+## Demo
+
+[![asciicast](https://asciinema.org/a/492169.svg)](https://asciinema.org/a/492169)
+
 ---
 
 Next: [working with VM (CBSDFile)](bhyve_cbsdfile.md)
