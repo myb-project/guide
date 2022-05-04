@@ -19,6 +19,12 @@
 env CLOUD_URL="https://remote-api1.example.com" CLOUD_KEY=/usr/home/user/.ssh/authorized_keys /nubectl create container test1
 ```
 
+Либо вы можете использовать параметры утилиты `nubectl`, например в Windows ОС (также, вам может понадобится параметр `-ssh_key` для указания пути к приватному ключу при входе в контейнер):
+```
+nubectl create container --cloud_key="c:\authorized_keys" --cloud_url=http://IP
+nubectl ssh container --cloud_key="c:\authorized_keys" --cloud_url=http://IP [--ssh_key=c:\id_ed25519]
+```
+
 ## Получение статуса
 
 Для получения статуса своего 'namespace' (ваш публичный ключ), используйте `status`, например:

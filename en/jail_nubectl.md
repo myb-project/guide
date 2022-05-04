@@ -19,6 +19,12 @@ To create a container via `nubectl`, use the `create container` argument with th
 env CLOUD_URL="https://remote-api1.example.com" CLOUD_KEY=/usr/home/user/.ssh/authorized_keys /nubectl create container test1
 ```
 
+Or you can use the arguments of the `nubectl` utility, for example on Windows OS (also, you may need the `-ssh_key` option to specify the path to the private key when entering the container):
+```
+nubectl create container --cloud_key="c:\authorized_keys" --cloud_url=http://IP
+nubectl ssh container --cloud_key="c:\authorized_keys" --cloud_url=http://IP [--ssh_key=c:\id_ed25519]
+```
+
 ## Getting a status
 
 To get the status of your 'namespace' (your public key), use `status`, for example:
