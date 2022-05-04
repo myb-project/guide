@@ -112,7 +112,7 @@ While in the directory with the CBSDfile, you can perform various operations on 
 
 ## Demo
 
-[![asciicast](https://asciinema.org/a/492169.svg)](https://asciinema.org/a/492169)
+[![asciicast](https://asciinema.org/a/492179.svg)](https://asciinema.org/a/492179)
 
 ---
 
