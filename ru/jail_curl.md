@@ -83,6 +83,9 @@ cat > jail.json <<EOF
 2) Удалите контейнер с использованием вашего токена:
 > curl -H cid:90af7aa8bc164240521753a105df6a05 http://HOST/api/v1/destroy/jail1
 
+## Demo
+
+[![asciicast](https://asciinema.org/a/492182.svg)](https://asciinema.org/a/492182)
 
 ---
 
