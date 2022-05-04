@@ -1,0 +1,90 @@
+# Работа с jail (nubectl)
+
+## Описание
+
+Работа с MyBee через [`curl`](jail_curl.md) продемонстрирована в первую очередь для демонстрации простоты API, но предполагается, что вы легким образом обернете API вызовы в любой фаворитный для вас язык программирования и сможете работать с API
+более комфортным спобобом. И утилита `nubectl` - один из примеров подобной обертке на языке GO, что позволяет компилировать бинарные файлы для всех современных ОС: Linux, BSD, MacOS и Windows.
+
+Получить `nubectl` утилиту вы можете на титульной странице своей инсталляции MyBee, или с сайта <a target="_blank" href="https://myb.convectix.com/download/">MyBee</a>.
+
+Утилита `nubectl` является 'тонким клиентом' для MyBee и позволяет выполнять операции по созданию/уничтожению окружений и выполнять вход через SSH.
+
+Для работы, вам необходимо указать через переменные окружения `CLOUD_URL` и `CLOUD_KEY` или аргументы `-cloud_url` и `-ssh_key` сервер MyBee и путь к файлу вашего публичного ключа.
+
+## Создание jail
+
+Для создания контейнера через `nubectl` используйте аргумент `create container` с именем создаваемого окружения, например:
+```
+env CLOUD_URL="https://remote-api1.example.com" CLOUD_KEY=/usr/home/user/.ssh/authorized_keys /nubectl create container test1
+```
+
+## Получение статуса
+
+Для получения статуса своего 'namespace' (ваш публичный ключ), используйте `status`, например:
+```
+env CLOUD_URL="https://remote-api1.example.com" CLOUD_KEY=/usr/home/user/.ssh/authorized_keys nubectl status
+{
+  "servers": [
+    {
+      "instanceid": "test1",
+      "type": "container",
+      "profile": "native",
+      "hw": "0/0/10g",
+      "ssh_string": "ssh root@10.0.100.8 -p22"
+    },
+    {
+      "instanceid": "minio3",
+      "type": "container",
+      "profile": "native",
+      "hw": "0/0/10g",
+      "ssh_string": "ssh root@10.0.100.4 -p22"
+    },
+    {
+      "instanceid": "minio2",
+      "type": "container",
+      "profile": "native",
+      "hw": "0/0/10g",
+      "ssh_string": "ssh root@10.0.100.6 -p22"
+    },
+    {
+      "instanceid": "minio1",
+      "type": "container",
+      "profile": "native",
+      "hw": "0/0/10g",
+      "ssh_string": "ssh root@10.0.100.3 -p22"
+    }
+  ],
+  "clusters": [
+    {
+      "total_environment": 4,
+      "total_cpus": 2,
+      "total_ram": 2,
+      "total_imgsize": 2
+    }
+  ]
+}
+```
+Если вы хотите увидеть статус отдельного окружения, используйте `status ENV`:
+```
+env CLOUD_URL="https://remote-api1.example.com" CLOUD_KEY=/usr/home/user/.ssh/authorized_keys nubectl status test`
+```
+
+
+## Удаление jail
+
+Для удаления, используйте команду `destroy`:
+```
+env CLOUD_URL="remote-api1.example.com" CLOUD_KEY=/usr/home/user/.ssh/authorized_keys nubectl destroy test1
+```
+
+## Вход в контейнер через SSH
+
+Для входа, используйте команду `ssh`:
+```
+env CLOUD_URL="remote-api1.example.com" CLOUD_KEY=/usr/home/user/.ssh/authorized_keys nubectl ssh test1
+```
+
+
+---
+
+Дальше: [Работа с ВМ (nubectl)](bhyve_nubectl.md)
