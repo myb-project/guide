@@ -96,17 +96,18 @@ you will create all containers in bulk, and if MyBee consists of several nodes, 
 
 To remove a jail via CBSDfile, use the `sudo cbsd destroy [env]` command, run in the directory with the CBSDfile.
 
-## Execute commands, copy files, login
+## Execute commands, copy files, login, status
 
 While in the directory with the CBSDfile, you can perform various operations on the remote environment, such as:
 
-|      command     |  description                                                                   |
-| ---------------- | ------------------------------------------------------------------------------ |
-| cbsd login       | makes an SSH call with the key ~/.ssh/id_ed25519 to enter the container        |
-| cbsd jexec <cmd> | executes <cmd> command in container via SSH with key ~/.ssh/id_ed25519         |
-| cbsd jscp        | copying files, e.g:                                                            |
-|                  |  - from your environment into jail: cbsd jscp <local_file> <env>:<remote_file> |
-|                  |  - from jail into your environment: cbsd jscp <env>:<remote_file> <local-file> |
+|      command      |  description                                                                   |
+| ----------------- | ------------------------------------------------------------------------------ |
+| cbsd login        | makes an SSH call with the key ~/.ssh/id_ed25519 to enter the container        |
+| cbsd jexec <cmd>  | executes <cmd> command in container via SSH with key ~/.ssh/id_ed25519         |
+| cbsd jscp         | copying files, e.g:                                                            |
+|                   |  - from your environment into jail: cbsd jscp <local_file> <env>:<remote_file> |
+|                   |  - from jail into your environment: cbsd jscp <env>:<remote_file> <local-file> |
+| cbsd status [env] | show environment(s) status                                                     |
 
 ---
 
