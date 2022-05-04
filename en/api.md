@@ -26,7 +26,7 @@ In a basic installation, the MyB API is as simple as possible to perform tasks s
 | kubernetes           | /api/v1/kubeconfig/`<X>` |    cid:`<cid>`   |  get kubeconfig for K8S cluster `<X>`, for **~/.kube/config**   |
 
 :construction: <ins>By adding new plugins and extending API endpoints, you can build solutions of any complexity and any opportunity</ins> . :construction:
-               
+
 
 ---
 

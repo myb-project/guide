@@ -26,7 +26,7 @@
 | kubernetes           | /api/v1/kubeconfig/`<X>` |    cid:`<cid>`   |  получить kubeconfig кластера `<X>`, для **~/.kube/config**     |
 
 :construction: <ins>Подключая новые плагины и расширяя API endpoints, вы можете строить решения любых сложностей и любых возможностей</ins> . :construction:
-               
+
 
 ---
 
