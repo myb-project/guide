@@ -86,7 +86,7 @@ env CLOUD_URL="remote-api1.example.com" CLOUD_KEY=/usr/home/user/.ssh/authorized
 
 ## Demo
 
-<script id="asciicast-492115" src="https://asciinema.org/a/492115.js" async></script>
+[![asciicast](https://asciinema.org/a/492115.svg)](https://asciinema.org/a/492115)
 
 ---
 
