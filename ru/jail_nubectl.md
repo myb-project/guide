@@ -84,6 +84,9 @@ env CLOUD_URL="remote-api1.example.com" CLOUD_KEY=/usr/home/user/.ssh/authorized
 env CLOUD_URL="remote-api1.example.com" CLOUD_KEY=/usr/home/user/.ssh/authorized_keys nubectl ssh test1
 ```
 
+## Demo
+
+<script id="asciicast-492115" src="https://asciinema.org/a/492115.js" async></script>
 
 ---
 
