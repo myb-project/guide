@@ -127,4 +127,4 @@ curl -X POST -H "Content-Type: application/json" -d @k8s.json http://HOST/api/v1
 
 ---
 
-Дальше: [Работа с jail (CBSDfile)](jail_cbsdfile.md)
+Дальше: [Работа с jail (nubectl)](jail_nubectl.md)
