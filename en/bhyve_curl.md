@@ -67,6 +67,9 @@ To delete bhyve VM, use your token/CID and [endpoint](api.md): **'/api/v1/status
 
 > curl -H cid:90af7aa8bc164240521753a105df6a05 http://HOST/api/v1/destroy/vm1
 
+## Demo
+
+[![asciicast](https://asciinema.org/a/492198.svg)](https://asciinema.org/a/492198)
 
 ---
 
