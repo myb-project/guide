@@ -111,5 +111,5 @@ While in the directory with the CBSDfile, you can perform various operations on 
 
 ---
 
-Next: [working with jail (Terraform)](jail_terraform.md)
+Next: [working with VM (CBSDFile)](bhyve_cbsdfile.md)
 

@@ -109,5 +109,5 @@ postcreate_minio3()
 
 ---
 
-Дальше: [Работа с jail (Terraform)](jail_terraform.md)
+Дальше: [Работа с bhyve (CBSDfile)](bhyve_cbsdfile.md)
 
