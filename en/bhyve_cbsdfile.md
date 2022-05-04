@@ -51,6 +51,9 @@ postcreate_minio1()
 and being in the directory with CBSDfile, run the command:
 > sudo cbsd up
 
+:bangbang: | :information_source: Note! Unlike jail, where jscp/jexec commands run as 'root', in the case of a VM you have access to an unprivileged user, whose name depends on the distribution (you can see the name to work with the user in the status of your environment). Thus, when copying a file inside a container, you can save it either in the user's directory ( /home/`USER` ) or in a public writable directory (eg /tmp). bexec works similarly - if you need to run a command as 'root', add the sudo prefix, for example: `bexec sudo whoami`
+:---: | :---
+
 Also, in one CBSDfile you can describe an unlimited number of environments, for example:
 ```
 CLOUD_URL="https://bravo-east.example.com"
