@@ -56,7 +56,7 @@ The product is built on completely alternative technologies, the code of which i
 
 Any physical (bare metal) server with an Intel/AMD x86-64 processor that supports virtualization and POPCNT instructions is suitable for MyBee if it runs FreeBSD 13.1-RELEASE.
 
-In thaory, [running MyBee on the ARM64 architecture is possible](https://github.com/freebsd-upb/freebsd-src/tree/projects/bhyvearm64). However there are currently no ARM64-based servers in the CBSD infrastructure, but work on the port can be done when ARM64-based hardware is made accessible to the project.
+In theory, [running MyBee on the ARM64 architecture is possible](https://github.com/freebsd-upb/freebsd-src/tree/projects/bhyvearm64). However there are currently no ARM64-based servers in the CBSD infrastructure, but work on the port can be done when ARM64-based hardware is made accessible to the project.
 
 In [some cases](https://wiki.freebsd.org/bhyve#Q:_Can_I_run_multiple_bhyve_hosts_under_VMware_nested_VT-x_EPT.3F) MyBee can be run in a virtualized environment, however this is not recommended and has not been tested by the MyBee authors. If the bhyve hypervisor cannot be used, you can still create containers based on FreeBSD jails, but this is most likely not what you want from MyBee ;-)
 
