@@ -16,6 +16,13 @@ In addition, the tandem of such a framework as [CBSD](https://cbsd.io) and Kuber
 3) Run Kubernetes API and Pods with external IPv6 addresses. Deploy services to Kubernetes and work with them directly over the Internet!;
 4) is your case here?;
 
+## Setting
+
+Before you can fully use the Kubernetes cluster in MyB, you must specify the subdomain where the clusters will be created and referenced by kubeconfig. This step is optional if you are using external IP addresses, 
+when each control plane gets its own unique address.
+If you don't have additional external addresses and don't complete this setup, you'll be limited to just one kubernetes cluster. To configure, use menu `17) Kubernetes clusters setting` -> `3) Change domain name for K8S (kubeconfig_domain: );`. 
+For example, if you specify `example.com` as kubeconfig_domain, then K8S clusters will use DNS names `env`.example.com, which should point to the MyB server. 
+If you do not control the DNS zone, you will have to add the appropriate entries in the /etc/hosts file.
 
 ## Creating single node K8S
 
