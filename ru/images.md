@@ -22,6 +22,7 @@ For example:
     "freepbx",
     "homeass",
     "jail",
+    "kali2022",
     "k8s",
     "netbsd9",
     "openbsd7",
@@ -50,6 +51,7 @@ Typically, image names characterize the image of the OS distribution:
 |          freepbx          | FreePBX (Asterisk VoIP), please open URL after VM start: http://IP             |
 |          homeass          | Home Assistant, please open URL after VM start: http://IP:8123                 |
 |           jail            | Образ FreeBSD rootfs для создания контейнеров на базе FreeBSD jail, представляет из себя архив base.txz с официального сайта проекта FreeBSD |
+|         kali2022          | Образ Kali Linux. Попимо доступа через ssh, вы можете использовать RDP доступ используя логин 'kali' и пароль 'kali' |
 |           k8s             | Образ для разворачивания Kubernetes инстансов                                  |
 |         netbsdX           | NetBSD OS                                                                      |
 |         openbsdX          | OpenBSD OS: 'openbsd7' for LATEST (7.1), 'openbsd70' - 7.0                     |
