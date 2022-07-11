@@ -84,6 +84,7 @@ Komponenten:
 * [Basic API endpoints](en/api.md) (noch nicht übersetzt)
 * [ACLs and Security](en/acl.md) (noch nicht übersetzt)
 * [List of GOLD images](en/images.md) (noch nicht übersetzt)
+* [API FQDN and certbot](en/api_fqdn_certbot.md) (noch nicht übersetzt)
 * [Working with jail (curl)](en/jail_curl.md) (noch nicht übersetzt)
 * [Working with VM (curl)](en/bhyve_curl.md) (noch nicht übersetzt)
 * [Working with Kubernetes (curl)](en/k8s_curl.md) (noch nicht übersetzt)

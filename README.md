@@ -82,6 +82,7 @@ Components:
 * [Basic API endpoints](en/api.md)
 * [ACLs and Security](en/acl.md)
 * [List of GOLD images](en/images.md)
+* [API FQDN and certbot](en/api_fqdn_certbot.md)
 * [Working with jail (curl)](en/jail_curl.md)
 * [Working with VM (curl)](en/bhyve_curl.md)
 * [Working with Kubernetes (curl)](en/k8s_curl.md)

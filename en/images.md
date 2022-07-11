@@ -30,6 +30,7 @@ For example:
     "opnsense22",
     "oracle7",
     "oracle8",
+    "oracle9",
     "rocky8",
     "ubuntu20",
     "ubuntu22"
@@ -64,4 +65,5 @@ Typically, image names characterize the image of the OS distribution:
 
 ---
 
-Next: [Working with jails (curl)](jail_curl.md)
+Next: [API FQDN and certbot](api_fqdn_certbot.md)
+
