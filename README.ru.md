@@ -83,6 +83,7 @@ Components:
 * [Базовые эндпоинты API](ru/api.md)
 * [ACL и безопасность](ru/acl.md)
 * [Список GOLD образов](ru/images.md)
+* [API FQDN и certbot](ru/api_fqdn_certbot.md)
 * [Работа с jail (curl)](ru/jail_curl.md)
 * [Работа с ВМ (curl)](ru/bhyve_curl.md)
 * [Работа с Kubernetes (curl)](ru/k8s_curl.md)
