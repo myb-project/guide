@@ -1,12 +1,12 @@
 # MyBee - The most simplified API for creating and destroying K8S & cloud VM
 
 <p align="center">
-  <a href="/README.md">English</a> |
-  <a href="/README.es.md">Español</a> |
-  <a href="/README.fr.md">Français</a> |
-  <a href="/README.de.md">Deutsch</a> |
+  <a href="README.md">English</a> |
+  <a href="README.es.md">Español</a> |
+  <a href="README.fr.md">Français</a> |
+  <a href="README.de.md">Deutsch</a> |
   <span>Русский</span> |
-  <a href="/README.ch.md">中文</a> |
+  <a href="README.ch.md">中文</a> |
 </p>
 
 ---
