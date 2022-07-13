@@ -303,6 +303,8 @@ Select 1-6 to change settings or 'Enter' to apply settings.
 
 Примечание2: Использование Windows ОС в качестве runner также возможно, но ввиду известных лицензионных ограничений, данный образ не поставляется с базовой версией MyBee. Вы можете отправить запрос по email для получения Windows образа и лицензий: book-myb at convectix.com
 
+Примечание3: В случае с FreeBSD, в качестве runner вы можете использовать не только виртуальные машины bhyve, но и легковесные контейнера на базе [jail(8)](https://man.freebsd.org/jail/8).
+
 Если что-то пошло не так:
 
 - попробуйте перезагрузить сервис из CLI: `service garm stop` + `service garm start`
