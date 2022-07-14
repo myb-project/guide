@@ -44,8 +44,7 @@ The script is a `sh` script, so just run it with the '/bin/sh' shell:
 sh auto
 ```
 
-![mybee_hz2](https://user-images.githubusercontent.com/926409/163675520-f2784da1-e62c-42ba-91ac-927a0e6ef012.png)
-
+![mybee_hz2.png](/images/mybee_hz2.png)
 
 3) If you are familiar with `bsdinstall`, you will be familiar with the following steps. All further steps are similar to a normal FreeBSD installation. The only exception is that at the end of the script, you will return to Hetzner's 'rescue' shell - just reboot the server with the `shutdown -r now` command yourself.
 

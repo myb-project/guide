@@ -45,7 +45,7 @@ fetch https://myb.convectix.com/auto
 sh auto
 ```
 
-![mybee_hz2](https://user-images.githubusercontent.com/926409/163675520-f2784da1-e62c-42ba-91ac-927a0e6ef012.png)
+![mybee_hz2.png](/images/mybee_hz2.png)
 
 
 3) Если вы знакомы с программой установки bsdinstall, вам будут знакомы следующие шаги.  Все дальнейшие шаги аналогичны обычной установке FreeBSD. Исключением является лишь то, что по окончанию работы скрипта, вы вернетесь в 'rescue' shell Hetzner - просто перезагрузите сервер командой 'reboot' самостоятельно.
