@@ -13,12 +13,26 @@ You can get the installation ISO image from the official website [under Download
 :bangbang: | :warning: A word of warning: These instructions destroy the information on the disks of the computer where MyBee is installed.
 :---: | :---
 
-1) First, you must reboot your Hetzner server in Rescue mode using FreeBSD 13.x. Make sure you select the correct architecture and OS:
+1) First, you must reboot your Hetzner server in Rescue mode. Unfortunately, as of 2022-06, the Hetzner team has decided to stop providing
+Rescue mode with FreeBSD so you can install via FreeBSD/MyBee via mfsBSD. Namely: Select the usual Linux in the Rescue tabs:
 
-![mybee_hz1](https://user-images.githubusercontent.com/926409/163261607-a1d909fc-d909-4eaa-9273-83c70d9f3409.png)
+![mybee_hz1.png](/images/mybee_hz1.png)
+
+Remember the password, reset the server and login to the server via SSH when it ready. Next, get the mfsBSD image and write it to the first (/dev/sda) drive. 
+If you are not sure that the server always boots from the first disk, just in case you can write the image to all disks:
+
+```
+wget https://myb.convectix.com/DL/mfsbsd-13.1.img
+dd if=mfsbsd-13.1.img of=/dev/sda bs=4M
+dd if=mfsbsd-13.1.img of=/dev/sdb bs=4M
+sync && shutdown -r now
+```
+
+![mybee_hz1a.png](/images/mybee_hz1a.png)
 
 
-2) After rebooting the server and accessing the shell as 'root', use the `fetch` command to get the installation script:
+2) After rebooting the server, login to the server via SSH as user 'root' and password 'mfsroot'. Once you have access, use the 'fetch' command to get the installation script:
+
 
 ```
 fetch https://myb.convectix.com/auto
