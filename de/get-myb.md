@@ -13,12 +13,25 @@ Abbilder eines Installationsmediums können auf der offiziellen Webseite [unter 
 :bangbang: | :warning: Eine Warnung vorweg: Diese Anleitungen überschreiben die vorhandenen Daten auf den Festplatten des Rechners, auf dem MyBee installiert wird.
 :---: | :---
 
-1) Booten Sie zuerst Ihren Hetzner-Server in den Rettungsmodus für FreeBSD 13.x. Stellen Sie dabei sicher, daß sie die richtige Architektur und das richtige Betriebssystem ausgewählt haben:
+1) Booten Sie zuerst Ihren Hetzner-Server in den Rettungsmodus. Leider hat sich das Hetzner-Team entschieden, ab 2022-06 die Bereitstellung einzustellen
+Rettungsmodus mit FreeBSD, damit Sie über FreeBSD/MyBee über mfsBSD installieren können. Nämlich: Wählen Sie das übliche Linux in den Rescue-Registerkarten aus:
 
-![mybee_hz1](https://user-images.githubusercontent.com/926409/163261607-a1d909fc-d909-4eaa-9273-83c70d9f3409.png)
 
+![mybee_hz1.png](/images/mybee_hz1.png)
 
-2) Nachdem Sie sich am Rettungssystem mit dem 'Root'-Benutzer angemeldet haben, verwenden Sie den `fetch`-Befehl, um das Installationsskript herunterzuladen:
+Merken Sie sich das Passwort, setzen Sie den Server zurück und melden Sie sich über SSH beim Server an, wenn er bereit ist. Als nächstes holen Sie sich das mfsBSD-Image und schreiben es auf das erste (/dev/sda) Laufwerk.
+Wenn Sie nicht sicher sind, ob der Server immer von der ersten Festplatte bootet, können Sie das Image nur für den Fall auf alle Festplatten schreiben:
+
+```
+wget https://myb.convectix.com/DL/mfsbsd-13.1.img
+dd if=mfsbsd-13.1.img of=/dev/sda bs=4M
+dd if=mfsbsd-13.1.img of=/dev/sdb bs=4M
+sync && shutdown -r now
+```
+
+![mybee_hz1a.png](/images/mybee_hz1a.png)
+
+2) Melden Sie sich nach dem Neustart des Servers über SSH als Benutzer 'root' und Passwort 'mfsroot' am Server an. Sobald Sie Zugriff haben, verwenden Sie den Befehl 'fetch', um das Installationsskript abzurufen:
 
 ```
 fetch https://myb.convectix.com/auto
@@ -30,7 +43,7 @@ Das Skript ist ein `sh`-Skript, so daß Sie es einfach mit der '/bin/sh'-Shell a
 sh auto
 ```
 
-![mybee_hz2](https://user-images.githubusercontent.com/926409/163675520-f2784da1-e62c-42ba-91ac-927a0e6ef012.png)
+![mybee_hz2.png](/images/mybee_hz2.png)
 
 
 3) Wenn Sie mit `bsdinstall` vertraut sind, werden Ihnen die folgenden Schritte bekannt vorkommen. Das weitere Vorgehen entspricht einer normalen FreeBSD-Installation. Der einzige Unterschied besteht darin, daß nach Abschluß des Skripts Sie wieder in der Shell des Hetzner-Rettungssystems landen - starten Sie nun einfach den Server mit dem `shutdown -r now`-Befehl neu.
