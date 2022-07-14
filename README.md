@@ -94,3 +94,7 @@ Components:
 * Working with VM (Terrafarm)
 * [Support](en/support.md)
 * [UI](en/ui.md)
+
+## Articles
+
+* [Turn MyBee instance into GitHub self-hosted runner](en/gh_runners.md)

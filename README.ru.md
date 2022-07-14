@@ -96,7 +96,6 @@ Components:
 * [Поддержка](ru/support.md)
 * [UI](ru/ui.md)
 
-
 ## Articles
 
 * [Turn MyBee instance into GitHub self-hosted runner](ru/gh_runners.md)

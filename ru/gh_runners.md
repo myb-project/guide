@@ -1,7 +1,7 @@
 # Turn MyBee instance into GitHub self-hosted runner
 
 Статья посвящена разворачиванию эфемерных *self-hosted* [GitHub runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners) на базе виртуальных машин [bhyve](https://en.wikipedia.org/wiki/Bhyve) под управлением [MyBee OS](https://myb.convectix.com) с функцией авто-скейлинга. 
-Особая ценность решения, актуальная для IT-меньшинств - возможность (помимо большого выбора *Linux* дистрибутивов и *Windows OS*) использовать экзотические дистрибутивы ОС, которые официально не поддерживаются GitHub: [Android-x64](https://www.android-x86.org/download), [DragonflyBSD](https://dragonflybsd.org), [FreeBSD](https://www.freebsd.org), [NetBSD](https://netbsd.org) и [OpenBSD](https://openbsd.org). 
+Особая ценность решения, актуальная для 'IT-меньшинств' - возможность (помимо большого выбора *Linux* дистрибутивов и *Windows OS*) использовать экзотические дистрибутивы ОС, которые официально не поддерживаются GitHub: [Android-x64](https://www.android-x86.org/download), [DragonflyBSD](https://dragonflybsd.org), [FreeBSD](https://www.freebsd.org), [NetBSD](https://netbsd.org) и [OpenBSD](https://openbsd.org). 
 Учитывая популярность платформы GitHub при разработке открытых и портируемых приложений, это может стать небольшим подарком для тех, кто работает над улучшением *CI/QA* процессов в отношении подобных систем.
 
 <center>
@@ -34,8 +34,8 @@
 процессору или другому специализированному оборудованию? И разумеется, это решение должно укладываться в адекватную цену. 
 В этом случае, Github рекомендует использовать свои собственные runners. Вы можете зарегистрировать и использовать два типа раннеров:
 
-- *Persistent* - (каждая job может использовать данный раннер бесконечное число раз - окружение не перезагружается и соответственно, для каждой последующей job в окружении могут оставаться артефакты, оставшиеся от работы предыдущей);
-- *Ephemeral* - (раннер этого типа принимает только 1 задачу, после которой окружение откатывается к первоначальному состоянию, что гарантирует получение всегда чистого окружения перед следующими тестами. Это определенно является хорошим преимуществом и экономит вам время по обслуживанию окружения. Мы сфокусируемся только на этом типе раннеров и добьемся авто-скейлинга.
+- *Persistent* - каждая job может использовать данный раннер бесконечное число раз - окружение не перезагружается и соответственно, для каждой последующей job в окружении могут оставаться артефакты, оставшиеся от работы предыдущей;
+- *Ephemeral* - раннер этого типа принимает только 1 задачу, после которой окружение откатывается к первоначальному состоянию, что гарантирует получение всегда чистого окружения перед следующими тестами. Это определенно является хорошим преимуществом и экономит вам время по обслуживанию окружения. Мы сфокусируемся только на этом типе раннеров и добьемся авто-скейлинга.
 
 Итак, подытожим разницу между *Github-hosted* и *Self-hosted*, чтобы мы лучше понимали решаемые проблемы:
 
@@ -83,6 +83,7 @@ linux-Oracle-7-x86_64
 linux-Oracle-8-x86_64
 linux-Oracle-9-x86_64
 linux-Rocky-8-x86_64
+linux-Rocky-9-x86_64
 linux-kubernetes-24
 linux-rabbitmq
 linux-ubuntudesktop-amd64-22.04
@@ -229,7 +230,7 @@ medium1  4    4g   20g
 
 ```
 Available images, please select name for new pool:
-You choice [alma9 centos7 centos8 debian10 debian11 dflybsd6 freebsd13_ufs freebsd13_zfs freebsd14_ufs freebsd14_zfs netbsd9 openbsd7 opnsense21 oracle7 oracle8 oracle9 rocky8 ubuntu20]:
+You choice [alma9 centos7 centos8 debian10 debian11 dflybsd6 freebsd13_ufs freebsd13_zfs freebsd14_ufs freebsd14_zfs netbsd9 openbsd7 opnsense21 oracle7 oracle8 oracle9 rocky8 rocky9 ubuntu20]:
 ```
 
 Например: openbsd7
