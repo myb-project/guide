@@ -25,7 +25,7 @@ Given the popularity of the GitHub platform for developing open and portable app
 |Expected network bandwidth (Mbps): |                 1500                  |
 
 
-## О Github Actions/runners
+## About Github Actions/runners
 
 In Github-hosted runners, you have a certain set of images for various operating systems and versions that have a certain set of libraries and SDKs.
 Workflows have a time limit of 6 hours, after which the job is automatically canceled and the Runner is cleared.
@@ -53,7 +53,7 @@ So, let's summarize the difference between *Github-hosted* and *Self-hosted* so 
 - You can use cloud services or your own dedicated servers, thereby getting the maximum power without any extra charge - low cost;
 - You can customize not only software, but also hardware, providing access to the peripherals you need for your cases;
 
-## О MyBee
+## About MyBee
 
 *MyBee* - it is a free open-source distribution kit that does not require knowledge and skills in working with Unix/command line in order to create and immediately start using a virtual machine. The installation field, the user has access to the simplest API to get the VM in the easiest way, but no one forbids entering the *MyBee* command line either. The project supports the work and timely updates of a large number of distributions, which can be used as high-performance self-hosted runners. At the time of writing, [list of images](images.md) available to create 'out of the box':
 
