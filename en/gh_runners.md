@@ -11,7 +11,7 @@ Given the popularity of the GitHub platform for developing open and portable app
 
 ## Introduction
 
-[GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) give private repositories the ability to easily create a pipeline [CI/CD](https://en.wikipedia.org/wiki/CI/CD), placing a certain [YAML](https://en.wikipedia.org/wiki/YAML) file in the repository structure. At the time of this writing (second half of 2022), by default, jobs are executed in the environment which is launched in [Azure](https://azure.microsoft.com) as [Standard_DS2_v2](https://docs.microsoft.com/en-us/azure/virtual-machines/dv2-dsv2-series) virtial machines:
+[GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) give private repositories the ability to easily create a pipeline [CI/CD](https://en.wikipedia.org/wiki/CI/CD), placing a certain [YAML](https://en.wikipedia.org/wiki/YAML) file in the repository structure. At the time of this writing (second half of 2022), by default, jobs are executed in the environment which is launched in [Azure](https://azure.microsoft.com) as [Standard_DS2_v2](https://docs.microsoft.com/en-us/azure/virtual-machines/dv2-dsv2-series) virtual machines:
 
 |                                   |                                       |
 |-----------------------------------| ------------------------------------- |
