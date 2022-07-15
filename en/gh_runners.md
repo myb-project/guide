@@ -323,6 +323,10 @@ In summary, self-hosted runners can be beneficial:
 Don't have a dedicated server but want to try? You can use the cloud or rent MyBee from ConvectIX at no extra cost (you pay the price of your chosen dedicated server provider - the price is formed by your chosen provider).
 For details, you can send a request by email: book-myb at convectix.com
 
+## Sponsors/Thanks
+
+This work was made possible thanks to donations from the community through [Patreon](https://www.patreon.com/clonos), since the infrastructure of the CBSD/MyBee/ClonOS is used (cloud image builds, mirrors, developments).
+
 ## Demo on youtube:
 
 [![Speedrun from scratch: How to setup GH self-hosted runner demo](/images/act.png)](https://youtu.be/6zLAnkg6dng "Speedrun from scratch: How to setup GH self-hosted runner demo")

@@ -328,6 +328,10 @@ Select 1-6 to change settings or 'Enter' to apply settings.
 
 У вас нет выделенного сервера, но хотите попробовать? Вы можете использовать облако или аренду MyBee от ConvectIX за себестоимость без наценки (вы платите цену выбранного вами поставщика dedicated сервера - цена образовывается выбранным вами провайдером). Для подробностей, вы можете отправить запрос по email: book-myb at convectix.com
 
+## Благодарности
+
+Эта работа стала возможной, благодаря пожертвованиям сообщества через [Patreon](https://www.patreon.com/clonos), поскольку задействована (переиспользована) инфраструктура проектов CBSD/MyBee/ClonOS (сборки cloud образов, зеркала, разработка)
+
 ## Demo on youtube:
 
 [![Speedrun from scratch: How to setup GH self-hosted runner demo](/images/act.png)](https://youtu.be/6zLAnkg6dng "Speedrun from scratch: How to setup GH self-hosted runner demo")
