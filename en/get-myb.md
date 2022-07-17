@@ -22,9 +22,9 @@ Remember the password, reset the server and login to the server via SSH when it 
 If you are not sure that the server always boots from the first disk, just in case you can write the image to all disks:
 
 ```
-wget https://myb.convectix.com/DL/mfsbsd-13.1.1.img
-dd if=mfsbsd-13.1.1.img of=/dev/sda bs=4M
-dd if=mfsbsd-13.1.1.img of=/dev/sdb bs=4M
+wget https://myb.convectix.com/DL/mfsbsd-13.1.img
+dd if=mfsbsd-13.1.img of=/dev/sda bs=4M
+dd if=mfsbsd-13.1.img of=/dev/sdb bs=4M
 sync && shutdown -r now
 ```
 
