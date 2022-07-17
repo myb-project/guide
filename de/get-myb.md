@@ -24,8 +24,8 @@ Wenn Sie nicht sicher sind, ob der Server immer von der ersten Festplatte bootet
 
 ```
 wget https://myb.convectix.com/DL/mfsbsd-13.1.1.img
-dd if=mfsbsd-13.1.img of=/dev/sda bs=4M
-dd if=mfsbsd-13.1.img of=/dev/sdb bs=4M
+dd if=mfsbsd-13.1.1.img of=/dev/sda bs=4M
+dd if=mfsbsd-13.1.1.img of=/dev/sdb bs=4M
 sync && shutdown -r now
 ```
 
