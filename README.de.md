@@ -78,7 +78,7 @@ Komponenten:
 ## MyBee Handbuch
 
 * [Installation von MyBee](de/get-myb.md)
-* [CLI/shell](de/shell.md)
+* [CLI/shell/Aktualisierung](de/shell.md)
 * [Konfiguration der Netzwerkschnittstellen](de/network.md)
 * [Network profiles](en/netprofile.md) (noch nicht übersetzt)
 * [Basic API endpoints](en/api.md) (noch nicht übersetzt)

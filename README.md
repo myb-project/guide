@@ -76,7 +76,7 @@ Components:
 ## MyBee Handbook
 
 * [Getting and installing MyBee](en/get-myb.md)
-* [CLI/shell](en/shell.md)
+* [CLI/shell/upgrade](en/shell.md)
 * [Configuring Network Interfaces](en/network.md)
 * [Network profiles](en/netprofile.md)
 * [Basic API endpoints](en/api.md)
