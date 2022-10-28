@@ -33,7 +33,8 @@ For example:
     "oracle9",
     "rocky8",
     "ubuntu20",
-    "ubuntu22"
+    "ubuntu22",
+    "ubuntu22_vdi"
   ]
 }
 ```
@@ -60,6 +61,7 @@ Typically, image names characterize the image of the OS distribution:
 |          oracleX          | Linux Oracle                                                                   |
 |          rockyX           | Linux Rocky                                                                    |
 |         ubuntuX           | Linux Ubuntu                                                                   |
+|        ubuntu_vdi         | Linux Ubuntu Desktop, use RDP for accessing using login 'user' and password: 'password' |
 |         rabbitmq          | Образ для разворачивания RabbitMQ кластеров                                    |
 
 
