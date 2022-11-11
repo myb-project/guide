@@ -28,6 +28,20 @@ In a basic installation, the MyB API is as simple as possible to perform tasks s
 :construction: <ins>By adding new plugins and extending API endpoints, you can build solutions of any complexity and any opportunity</ins> . :construction:
 
 
+1) create payload, 'vm.json':
+```
+{
+  "image": "freebsd13_ufs",
+  "imgsize": "10g",
+  "ram": "2g",
+  "cpus": "1",
+  "pubkey": "ssh-ed25519 AAAAC3N...XXX comment@your.domain"
+}
+```
+
+Example:
+> curl -X POST -H "Content-Type: application/json" -d @vm.json http://172.16.0.1api/v1/create/myvm1
+
 ---
 
 Next: [ACLs and Security](acl.md)
