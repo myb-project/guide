@@ -28,7 +28,9 @@ In a basic installation, the MyB API is as simple as possible to perform tasks s
 :construction: <ins>By adding new plugins and extending API endpoints, you can build solutions of any complexity and any opportunity</ins> . :construction:
 
 
-1) create payload, 'vm.json':
+## Base methods
+
+1) /create payload, 'vm.json':
 ```
 {
   "image": "freebsd13_ufs",
