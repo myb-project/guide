@@ -24,9 +24,9 @@ Rescue режима с FreeBSD, поэтому вы можете установ�
 что сервер всегда загружается с первого диска, на всякий случай вы можете записать образ на все диски:
 
 ```
-wget https://myb.convectix.com/DL/mfsbsd-13.1.img
-dd if=mfsbsd-13.1.img of=/dev/sda bs=4M
-dd if=mfsbsd-13.1.img of=/dev/sdb bs=4M
+wget https://myb.convectix.com/DL/mfsbsd-13.2.img
+dd if=mfsbsd-13.2.img of=/dev/sda bs=4M
+dd if=mfsbsd-13.2.img of=/dev/sdb bs=4M
 sync && shutdown -r now
 ```
 
