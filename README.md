@@ -54,7 +54,7 @@ The product is built on completely alternative technologies, the code of which i
 
 ## System Requirements
 
-Any physical (bare metal) server with an Intel/AMD x86-64 processor that supports virtualization and POPCNT instructions is suitable for MyBee if it runs FreeBSD 13.1-RELEASE.
+Any physical (bare metal) server with an Intel/AMD x86-64 processor that supports virtualization and POPCNT instructions is suitable for MyBee if it runs FreeBSD 13.2-RELEASE.
 
 In theory, [running MyBee on the ARM64 architecture is possible](https://github.com/freebsd-upb/freebsd-src/tree/projects/bhyvearm64). However there are currently no ARM64-based servers in the CBSD infrastructure, but work on the port can be done when ARM64-based hardware is made accessible to the project.
 
@@ -70,8 +70,8 @@ The creation of environments is managed through a RestAPI (i.e. the command line
 
 Components:
 
-* [FreeBSD OS](https://www.freebsd.org) 13.1+
-* [CBSD](https://cbsd.io) 13.1+
+* [FreeBSD OS](https://www.freebsd.org) 13.2+
+* [CBSD](https://cbsd.io) 13.2+
 
 ## MyBee Handbook
 

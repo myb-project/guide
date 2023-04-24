@@ -55,7 +55,7 @@ MyBee предоставляет только API, если вы ищите WEB 
 
 ## System requirements
 
-Для MyBee подойдет любой физический (bare metal) сервер с процессором Intel/AMD архитектуры x86-64, поддерживающим виртуализацию и POPCNT инструкцию, на котором запускается ОС FreeBSD 13.1-RELEASE.
+Для MyBee подойдет любой физический (bare metal) сервер с процессором Intel/AMD архитектуры x86-64, поддерживающим виртуализацию и POPCNT инструкцию, на котором запускается ОС FreeBSD 13.2-RELEASE.
 
 Теоретически, [возможна работа на архитектуре ARM64](https://github.com/freebsd-upb/freebsd-src/tree/projects/bhyvearm64). На данный момент в инфраструктуре CBSD нет серверов на базе ARM64, но работа над портом может быть проведена при передаче проекту оборудования на базе ARM64.
 
@@ -71,8 +71,8 @@ MyBee предоставляет только API, если вы ищите WEB 
 
 Components:
 
-* [FreeBSD OS](https://www.freebsd.org) 13.1+
-* [CBSD](https://cbsd.io) 13.1+
+* [FreeBSD OS](https://www.freebsd.org) 13.2+
+* [CBSD](https://cbsd.io) 13.2+
 
 ## MyBee Handbook
 

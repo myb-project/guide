@@ -56,7 +56,7 @@ Die Software ist komplett aus alternativen Technologien aufgebaut, deren Quellco
 
 ## Systemvoraussetzungen
 
-Jeder beliebige physikalische ("bare metal") Server mit einem Intel/AMD x86-64 Prozessor, der Virtualisierung und die POPCNT Instruktionen unterstützt, ist für den Einsatz mit MyBee geeignet, wenn darauf FreeBSD 13.1-RELEASE läuft.
+Jeder beliebige physikalische ("bare metal") Server mit einem Intel/AMD x86-64 Prozessor, der Virtualisierung und die POPCNT Instruktionen unterstützt, ist für den Einsatz mit MyBee geeignet, wenn darauf FreeBSD 13.2-RELEASE läuft.
 
 Theoretisch ist MyBee auch auf der [ARM64-Architectur lauffähig](https://github.com/freebsd-upb/freebsd-src/tree/projects/bhyvearm64). Jedoch verfügt die CBSD-Serverinfrastruktur derzeit über keine ARM64-basierten Servers. Die Arbeit an einem solchen Port kann jedoch beginnen, wenn solche Hardware dem Projekt zur Verfügung gestellt werden sollte.
 
@@ -72,8 +72,8 @@ Die Erstellung von Virtuellen Umgebungen wird über eine REST-API durchgeführt 
 
 Komponenten:
 
-* [FreeBSD Betriebssystem](https://www.freebsd.org) 13.1+
-* [CBSD](https://cbsd.io) 13.1+
+* [FreeBSD Betriebssystem](https://www.freebsd.org) 13.2+
+* [CBSD](https://cbsd.io) 13.2+
 
 ## MyBee Handbuch
 
