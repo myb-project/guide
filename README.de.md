@@ -80,7 +80,7 @@ Komponenten:
 * [Installation von MyBee](de/get-myb.md)
 * [CLI/shell/Aktualisierung](de/shell.md)
 * [Konfiguration der Netzwerkschnittstellen](de/network.md)
-* [Network profiles](en/netprofile.md) (noch nicht übersetzt)
+* [Netzwerkprofile](de/netprofile.md)
 * [Basic API endpoints](en/api.md) (noch nicht übersetzt)
 * [ACLs and Security](en/acl.md) (noch nicht übersetzt)
 * [List of GOLD images](en/images.md) (noch nicht übersetzt)

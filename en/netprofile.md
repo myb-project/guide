@@ -10,7 +10,7 @@ Profiles affect which addresses and network routing will be used when ordering v
 
 ## Profile switching
 
-To change the profile, use the 'Change VM network profile' menu option:
+To change the active profile, use the 'Change VM network profile' menu option:
 
 ![net](https://user-images.githubusercontent.com/926409/163693214-04a0f579-e36c-44d2-a877-2b790f90291d.png)
 
@@ -28,11 +28,11 @@ Default profile. It's good for a classic installation when you have a server wit
 
 Also, this profile can cover two cases:
 
-Mapping / forward 1: 1 additional external IPv4 addresses to any of the virtual machines, elastic IP. So, the virtual machine starts with a private IPv4 address, but the external IPv4 address allocated for the VM guarantees that any call to any port of the external address using the TCP / UDP protocols will be forwarded through the same ports to the address of the virtual machine. Also, when traffic goes outside, the VM will use the dedicated address as a NAT, and not a shared one.
+Mapping / forward 1: 1 additional external IPv4 address to any of the virtual machines, elastic IP. So, the virtual machine starts with a private IPv4 address, but the external IPv4 address allocated for the VM guarantees that any call to any port of the external address using the TCP / UDP protocols will be forwarded through the same ports to the address of the virtual machine. Also, when traffic goes outside, the VM will use the dedicated address as a NAT, and not a shared one.
 
 ## 2) Multi NIC: private IPv4
 
-The second classic profile. An installation similar to the first profile, but in addition to a single (or very limited number of external IPv4 addresses), your host is configured to use IPv6 addresses. In this case, virtual environments are created with two virtual interfaces, where the first interface is similar to profile 1: an IPv4 address is assigned from a private (rfc1918) network, with access to the Internet when working with an IPv4 stack through NAT and the ability to redirect individual services/ports over IPv4 inside, using free ports of the external IPv4 address of the host. The second interface is configured and receives an external IPv6 address and a separate 'default router' with access to the Internet when the IPv6 stack is running.
+The second classic profile. An installation similar to the first profile, but in addition to a single IPv4 address (or very limited number of external IPv4 addresses), your host is configured to use IPv6 addresses. In this case, virtual environments are created with two virtual interfaces, where the first interface is similar to profile 1: an IPv4 address is assigned from a private (rfc1918) network, with access to the Internet when working with an IPv4 stack through NAT and the ability to redirect individual services/ports over IPv4 inside, using free ports of the external IPv4 address of the host. The second interface is configured and receives an external IPv6 address and a separate 'default router' with access to the Internet when the IPv6 stack is running.
 
 In this case, if your home computer or other resources work using the IPv6 protocol, you will be able to work with the virtual environment directly via the external address, without any redirects or forwards.
 
