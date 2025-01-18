@@ -19,7 +19,7 @@
 
 MyBee ist eine Software zum Arbeiten mit Virtuellen Umgebungen über eine sehr einfache API. Sie ist in erster Linie zur Verwendung in einer sicheren ("trusted") Umgebung gedacht und/oder zu Integration bzw. Aufbau einer privaten Cloud, sowie zum Aufbau Ihres eigenen *Hyperconverged Clusters*.
 
-MyBee wird als Satellitenprojekt (als eine Art Demo für eines der Ziele) des nichtkommerziellen [CBSD](https://cbsd.io)-Projektes entwickelt. Es verwendet derzeit Image-Bibliotheken sowie Infrastruktur, die mit Mitteln aus Spenden der [CBSD-Unterstützer](https://www.patreon.com/clonos) aktuell gehalten werden, also eine der Ergebnisse der Projektfinanzierung darstellen.
+MyBee wird als Satellitenprojekt (als eine Art Demo für eines der Ziele) des nichtkommerziellen [CBSD](https://github.com/cbsd/cbsd)-Projektes entwickelt. Es verwendet derzeit Image-Bibliotheken sowie Infrastruktur, die mit Mitteln aus Spenden der [CBSD-Unterstützer](https://www.patreon.com/clonos) aktuell gehalten werden, also eine der Ergebnisse der Projektfinanzierung darstellen.
 
 Betriebssysteme und Distributionen, deren Betrieb getestet wurde (weitere in dieser Liste nicht aufgeführte sind verfügbar):
 
@@ -29,6 +29,8 @@ Betriebssysteme und Distributionen, deren Betrieb getestet wurde (weitere in die
 - **Other**: [SmartOS](https://www.joyent.com/smartos), [Android x64](https://www.android-x86.org/) usw.;
 
 MyBee stellt dabei nur eine API bereit; wenn Sie auf der Suche nach einem Web-Interface sind, um mit Bhyve oder Jails zu arbeiten, sehen Sie sich einmal das [ClonOS](https://clonos.convectix.com/)-Projekt an, welches ebenfalls ein vollständig quelloffenes und permissiv lizenziertes (BSD-Lizenz) Satellitenprojekt ist.
+
+Wenn Sie einen grafischen Client verwenden möchten, schauen Sie sich um: [MyBee-QT](https://github.com/myb-project/mybee-qt/);
 
 ## Übersicht über MyBee
 
@@ -52,7 +54,7 @@ Die Software ist komplett aus alternativen Technologien aufgebaut, deren Quellco
 - Das wunderbare Betriebssystem [FreeBSD](https://www.freebsd.org);
 - Der hochperformante Hypervisor [Bhyve](https://en.wikipedia.org/wiki/Bhyve);
 - Der [NETMAP](https://man.freebsd.org/netmap/4)/[VALE](https://man.freebsd.org/vale/4) Virtual Switch;
-- Der [CBSD](https://cbsd.io) Virtual Environment manager;
+- Der [CBSD](https://github.com/cbsd/cbsd) Virtual Environment manager;
 
 ## Systemvoraussetzungen
 
@@ -72,8 +74,8 @@ Die Erstellung von Virtuellen Umgebungen wird über eine REST-API durchgeführt 
 
 Komponenten:
 
-* [FreeBSD Betriebssystem](https://www.freebsd.org) 13.2+
-* [CBSD](https://cbsd.io) 13.2+
+* [FreeBSD Betriebssystem](https://www.freebsd.org) 14.2+
+* [CBSD](https://github.com/cbsd/cbsd) 14.2+
 
 ## MyBee Handbuch
 
@@ -96,3 +98,10 @@ Komponenten:
 * Working with VM (Terrafarm) (noch nicht übersetzt)
 * [Support](en/support.md) (noch nicht übersetzt)
 * [UI](en/ui.md) (noch nicht übersetzt)
+
+
+## Sponsor this project
+
+Wenn Ihnen dieses Projekt gefällt, möchten Sie sich bedanken und uns unterstützen:
+
+<a href="https://www.patreon.com/clonos"><img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" alt="Patreon donate button" /></a>

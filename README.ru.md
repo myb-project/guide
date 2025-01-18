@@ -17,7 +17,7 @@
 
 MyBee представляет собой ПО для работы с виртуальными окружениями посредством простейшего API, в основном для использования в Trusted environment и/или интеграции/построения частного облака, а также для построения собственного гиперконвергентного кластера.
 
-MyBee является sattelite-проектом (как демонстрация одной из целей) некоммерческого проекта [CBSD](https://cbsd.io) и в настоящее время использует библиотеки образов и инфраструктуру, поддерживаемыми в актуальном состоянии на средства [донороров проекта CBSD](https://www.patreon.com/clonos) в качестве одного из результатов финансирования по развитию проекта.
+MyBee является sattelite-проектом (как демонстрация одной из целей) некоммерческого проекта [CBSD](https://github.com/cbsd/cbsd) и в настоящее время использует библиотеки образов и инфраструктуру, поддерживаемыми в актуальном состоянии на средства [донороров проекта CBSD](https://www.patreon.com/clonos) в качестве одного из результатов финансирования по развитию проекта.
 
 Проверенные в работе ОС и дистрибутивы (но не ограниченны этим списком):
 
@@ -27,6 +27,8 @@ MyBee является sattelite-проектом (как демонстраци
 - **Other**: [SmartOS](https://www.joyent.com/smartos), [Android x64](https://www.android-x86.org/) и т.д.;
 
 MyBee предоставляет только API, если вы ищите WEB интерфейс для работы с 'bhyve/jail', обратите внимание проект [ClonOS](https://clonos.convectix.com/) , также являющийся полностью opensource и BSD-licensed sattite-проектом CBSD.
+
+Если вы хотите использовать графический клиент, посмотрите: [MyBee-QT](https://github.com/myb-project/mybee-qt/);
 
 ## MyBee overwiew
 
@@ -51,7 +53,7 @@ MyBee предоставляет только API, если вы ищите WEB 
 - замечательная ОС [FreeBSD](https://www.freebsd.org);
 - высокопроизводительный гипервизор [bhyve](https://en.wikipedia.org/wiki/Bhyve);
 - [NETMAP](https://man.freebsd.org/netmap/4)/[VALE](https://man.freebsd.org/vale/4) виртуальный свич;
-- менеджер виртуальных окружений [CBSD](https://cbsd.io).
+- менеджер виртуальных окружений [CBSD](https://github.com/cbsd/cbsd).
 
 ## System requirements
 
@@ -71,8 +73,8 @@ MyBee предоставляет только API, если вы ищите WEB 
 
 Components:
 
-* [FreeBSD OS](https://www.freebsd.org) 13.2+
-* [CBSD](https://cbsd.io) 13.2+
+* [FreeBSD OS](https://www.freebsd.org) 14.2+
+* [CBSD](https://github.com/cbsd/cbsd) 14.2+
 
 ## MyBee Handbook
 
@@ -99,3 +101,9 @@ Components:
 ## Articles
 
 * [Turn MyBee instance into GitHub self-hosted runner](ru/gh_runners.md)
+
+## Sponsor this project
+
+Если вам нравится этот проект, хотите сказать спасибо и поддержать нас:
+
+<a href="https://www.patreon.com/clonos"><img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" alt="Patreon donate button" /></a>

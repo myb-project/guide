@@ -17,7 +17,7 @@
 
 MyBee is a software for working with virtual environments through the simplest API, mainly for use in a trusted environment and/or integration/building of a private cloud, as well as building your own hyperconverged cluster.
 
-MyBee is a satellite project (as a demo of one of the goals) of the non-commercial project [CBSD](https://cbsd.io) and currently uses image libraries and infrastructure kept up-to-date with funds from [CBSD project donors](https://www.patreon.com/clonos) as one of the outcomes of project development funding.
+MyBee is a satellite project (as a demo of one of the goals) of the non-commercial project [CBSD](https://github.com/cbsd/cbsd) and currently uses image libraries and infrastructure kept up-to-date with funds from [CBSD project donors](https://www.patreon.com/clonos) as one of the outcomes of project development funding.
 
 OS and distributions tested in operation (but not limited to this list):
 
@@ -27,6 +27,8 @@ OS and distributions tested in operation (but not limited to this list):
 - **Other**: [SmartOS](https://www.joyent.com/smartos), [Android x64](https://www.android-x86.org/) and so on;
 
 MyBee only provides an API, if you are looking for a WEB interface to work with bhyve or jails, check out the [ClonOS](https://clonos.convectix.com/) project, which is also a fully open-source and BSD-licensed satellite project of CBSD.
+
+If you want to use a graphical client, take a look: [MyBee-QT](https://github.com/myb-project/mybee-qt/);
 
 ## MyBee Overwiew
 
@@ -50,7 +52,7 @@ The product is built on completely alternative technologies, the code of which i
 - The wonderful [FreeBSD](https://www.freebsd.org) OS;
 - The high performance [bhyve](https://en.wikipedia.org/wiki/Bhyve) hypervisor;
 - The [NETMAP](https://man.freebsd.org/netmap/4)/[VALE](https://man.freebsd.org/vale/4) virtual switch;
-- The [CBSD](https://cbsd.io) virtual environment manager;
+- The [CBSD](https://github.com/cbsd/cbsd) virtual environment manager;
 
 ## System Requirements
 
@@ -70,8 +72,8 @@ The creation of environments is managed through a RestAPI (i.e. the command line
 
 Components:
 
-* [FreeBSD OS](https://www.freebsd.org) 13.2+
-* [CBSD](https://cbsd.io) 13.2+
+* [FreeBSD OS](https://www.freebsd.org) 14.2+
+* [CBSD](https://github.com/cbsd/cbsd) 14.2+
 
 ## MyBee Handbook
 
@@ -98,3 +100,9 @@ Components:
 ## Articles
 
 * [Turn MyBee instance into GitHub self-hosted runner](en/gh_runners.md)
+
+## Sponsor this project
+
+If you like this project, want to say thank you and support us, please use:
+
+<a href="https://www.patreon.com/clonos"><img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" alt="Patreon donate button" /></a>
