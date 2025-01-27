@@ -17,9 +17,9 @@
 
 ---
 
-MyBee ist eine Software zum Arbeiten mit Virtuellen Umgebungen über eine sehr einfache API. Sie ist in erster Linie zur Verwendung in einer sicheren ("trusted") Umgebung gedacht und/oder zu Integration bzw. Aufbau einer privaten Cloud, sowie zum Aufbau Ihres eigenen *Hyperconverged Clusters*.
+MyBee ist eine Software zum Arbeiten mit virtuellen Umgebungen mithilfe einer einfachen API. Das Projekt hat Forschungscharakter und ist für den Einsatz in einer vertrauenswürdigen Umgebung und/oder die Integration/den Aufbau einer privaten Cloud sowie für den Aufbau eines eigenen *Hyperconverged Clusters* konzipiert.
 
-MyBee wird als Satellitenprojekt (als eine Art Demo für eines der Ziele) des nichtkommerziellen [CBSD](https://github.com/cbsd/cbsd)-Projektes entwickelt. Es verwendet derzeit Image-Bibliotheken sowie Infrastruktur, die mit Mitteln aus Spenden der [CBSD-Unterstützer](https://www.patreon.com/clonos) aktuell gehalten werden, also eine der Ergebnisse der Projektfinanzierung darstellen.
+MyBee wird als Satellitenprojekt (als eine Art Demo für eines der Ziele) des nichtkommerziellen [CBSD](https://github.com/cbsd/cbsd)-Projektes entwickelt. Es verwendet derzeit [Image-Bibliotheken sowie Infrastruktur](https://github.com/cbsd/mirrors), die mit Mitteln aus Spenden der [CBSD-Unterstützer](https://www.patreon.com/clonos) aktuell gehalten werden, also eine der Ergebnisse der Projektfinanzierung darstellen.
 
 Betriebssysteme und Distributionen, deren Betrieb getestet wurde (weitere in dieser Liste nicht aufgeführte sind verfügbar):
 
@@ -30,7 +30,11 @@ Betriebssysteme und Distributionen, deren Betrieb getestet wurde (weitere in die
 
 MyBee stellt dabei nur eine API bereit; wenn Sie auf der Suche nach einem Web-Interface sind, um mit Bhyve oder Jails zu arbeiten, sehen Sie sich einmal das [ClonOS](https://clonos.convectix.com/)-Projekt an, welches ebenfalls ein vollständig quelloffenes und permissiv lizenziertes (BSD-Lizenz) Satellitenprojekt ist.
 
-Wenn Sie einen grafischen Client verwenden möchten, schauen Sie sich um: [MyBee-QT](https://github.com/myb-project/mybee-qt/);
+---
+
+:information_source: Es gibt auch einen grafischen Client für MyBee namens [MyBee-QT](https://github.com/myb-project/mybee-qt/) (der mit Vanilla-BSD/Linux-Systemen ohne MyBee verwendet werden kann ).
+
+---
 
 ## Übersicht über MyBee
 
@@ -58,9 +62,13 @@ Die Software ist komplett aus alternativen Technologien aufgebaut, deren Quellco
 
 ## Systemvoraussetzungen
 
-Jeder beliebige physikalische ("bare metal") Server mit einem Intel/AMD x86-64 Prozessor, der Virtualisierung und die POPCNT Instruktionen unterstützt, ist für den Einsatz mit MyBee geeignet, wenn darauf FreeBSD 13.2-RELEASE läuft.
+Jeder beliebige physikalische ("bare metal") Server mit einem Intel/AMD x86-64 Prozessor, der Virtualisierung und die POPCNT Instruktionen unterstützt, ist für den Einsatz mit MyBee geeignet, wenn darauf FreeBSD 14.2-RELEASE läuft.
 
-Theoretisch ist MyBee auch auf der [ARM64-Architectur lauffähig](https://github.com/freebsd-upb/freebsd-src/tree/projects/bhyvearm64). Jedoch verfügt die CBSD-Serverinfrastruktur derzeit über keine ARM64-basierten Servers. Die Arbeit an einem solchen Port kann jedoch beginnen, wenn solche Hardware dem Projekt zur Verfügung gestellt werden sollte.
+---
+
+:information_source: bhyve ist auch auf ARM64-Architekturen möglich und bietet zunächst Unterstützung für RISCV-basierte Virtualisierung
+
+---
 
 Unter [gewissen Umständen](https://wiki.freebsd.org/bhyve#Q:_Can_I_run_multiple_bhyve_hosts_under_VMware_nested_VT-x_EPT.3F) kann MyBee selbst in einer Virtuellen Umgebung betrieben werden; dies wird jedoch nicht empfohlen und wurde durch die MyBee-Entwickler nicht getestet. In Fällen, in welchen der Bhyve-Hypervisor nicht benutzt werden kann, können dennoch Container erstellt werden, die auf der Technologie von FreeBSD-Jails basieren - jedoch ist dies vermutlich nicht das, was sie von MyBee erwarten. ;-)
 
@@ -80,6 +88,9 @@ Komponenten:
 ## MyBee Handbuch
 
 * [Installation von MyBee](de/get-myb.md)
+
+$~~~$ * [Schnellstart: Ihr erster virtueller Gast](de/quick_start.md)
+
 * [CLI/shell/Aktualisierung](de/shell.md)
 * [Konfiguration der Netzwerkschnittstellen](de/network.md)
 * [Netzwerkprofile](de/netprofile.md)
@@ -102,6 +113,6 @@ Komponenten:
 
 ## Sponsor this project
 
-Wenn Ihnen dieses Projekt gefällt, möchten Sie sich bedanken und uns unterstützen:
+Wenn Ihnen dieses Projekt gefällt, möchten Sie sich bedanken und die Entwicklung unterstützen:
 
 <a href="https://www.patreon.com/clonos"><img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" alt="Patreon donate button" /></a>

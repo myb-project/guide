@@ -15,9 +15,9 @@
 
 ---
 
-MyBee is a software for working with virtual environments through the simplest API, mainly for use in a trusted environment and/or integration/building of a private cloud, as well as building your own hyperconverged cluster.
+MyBee is a software for working with virtual environments through the simplest API. The project is of a research nature and is designed for use in a Trusted environment and/or integration/building a private cloud, as well as for building your own hyperconvergent cluster.
 
-MyBee is a satellite project (as a demo of one of the goals) of the non-commercial project [CBSD](https://github.com/cbsd/cbsd) and currently uses image libraries and infrastructure kept up-to-date with funds from [CBSD project donors](https://www.patreon.com/clonos) as one of the outcomes of project development funding.
+MyBee is a satellite project (as a demo of one of the goals) of the non-commercial project [CBSD](https://github.com/cbsd/cbsd) and currently uses [image libraries and infrastructure](https://github.com/cbsd/mirrors) kept up-to-date with funds from [CBSD project donors](https://www.patreon.com/clonos) as one of the outcomes of project development funding.
 
 OS and distributions tested in operation (but not limited to this list):
 
@@ -28,7 +28,11 @@ OS and distributions tested in operation (but not limited to this list):
 
 MyBee only provides an API, if you are looking for a WEB interface to work with bhyve or jails, check out the [ClonOS](https://clonos.convectix.com/) project, which is also a fully open-source and BSD-licensed satellite project of CBSD.
 
-If you want to use a graphical client, take a look: [MyBee-QT](https://github.com/myb-project/mybee-qt/);
+---
+
+:information_source: There is also a graphical client for MyBee called [MyBee-QT](https://github.com/myb-project/mybee-qt/) (which can be used with vanilla BSD/Linux systems, without MyBee).
+
+---
 
 ## MyBee Overwiew
 
@@ -56,9 +60,13 @@ The product is built on completely alternative technologies, the code of which i
 
 ## System Requirements
 
-Any physical (bare metal) server with an Intel/AMD x86-64 processor that supports virtualization and POPCNT instructions is suitable for MyBee if it runs FreeBSD 13.2-RELEASE.
+Any physical (bare metal) server with an Intel/AMD x86-64 processor that supports virtualization and POPCNT instructions is suitable for MyBee if it runs FreeBSD 14.2-RELEASE.
 
-In theory, [running MyBee on the ARM64 architecture is possible](https://github.com/freebsd-upb/freebsd-src/tree/projects/bhyvearm64). However there are currently no ARM64-based servers in the CBSD infrastructure, but work on the port can be done when ARM64-based hardware is made accessible to the project.
+---
+
+:information_source: bhyve also runs on ARM64 architectures and has initial support for RISCV-based virtualization.
+
+---
 
 In [some cases](https://wiki.freebsd.org/bhyve#Q:_Can_I_run_multiple_bhyve_hosts_under_VMware_nested_VT-x_EPT.3F) MyBee can be run in a virtualized environment, however this is not recommended and has not been tested by the MyBee authors. If the bhyve hypervisor cannot be used, you can still create containers based on FreeBSD jails, but this is most likely not what you want from MyBee ;-)
 
@@ -78,6 +86,9 @@ Components:
 ## MyBee Handbook
 
 * [Getting and installing MyBee](en/get-myb.md)
+
+$~~~$ * [Quick Start: Your First Virtual Guest](en/quick_start.md)
+
 * [CLI/shell/upgrade](en/shell.md)
 * [Configuring Network Interfaces](en/network.md)
 * [Network profiles](en/netprofile.md)
@@ -103,6 +114,6 @@ Components:
 
 ## Sponsor this project
 
-If you like this project, want to say thank you and support us, please use:
+If you like this project, want to say thank and support its development:
 
 <a href="https://www.patreon.com/clonos"><img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" alt="Patreon donate button" /></a>
