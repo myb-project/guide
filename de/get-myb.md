@@ -4,7 +4,11 @@ Die meisten Einstellungen werden nach der Installation des Systems vorgenommen. 
 
 ## Interaktives Installationsprogramm
 
-Sie können das Installations-ISO-Image (CD/DVD) oder IMG-Image (USB-Speicherstick) von der offiziellen Website [im Download-Bereich](https://myb.convectix.com/download/) herunterladen.
+Sie können das Installations-ISO-Image (CD/DVD) oder IMG-Image (USB-Speicherstick):
+
+* [mybee-latest.iso](https://convectix.com/DL/mybee/mybee-latest.iso)
+
+* [mybee-latest.img](https://convectix.com/DL/mybee/mybee-latest.img)
 
 :bangbang: | :warnung: Bitte beachten! Verwenden Sie bei der Installation von MyBee die UEFI-Startmethode
 :---: | :---

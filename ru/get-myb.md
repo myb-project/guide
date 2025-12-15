@@ -4,7 +4,12 @@
 
 ## Интерактивный инсталлятор
 
-Вы можете получить установочный ISO образ (CD/DVD) или IMG образ (USB memstick) с официального сайта [в разделе Downloads](https://myb.convectix.com/download/).
+Вы можете получить установочный ISO образ (CD/DVD) или IMG образ (USB memstick):
+
+* [mybee-latest.iso](https://convectix.com/DL/mybee/mybee-latest.iso)
+
+* [mybee-latest.img](https://convectix.com/DL/mybee/mybee-latest.img)
+
 
 :bangbang: | :warning: Обратите внимание! Используйте UEFI boot method при установке MyBee.
 :---: | :---

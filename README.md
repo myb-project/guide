@@ -108,10 +108,6 @@ $~~~$ * [Quick Start: Your First Virtual Guest](en/quick_start.md)
 * [Support](en/support.md)
 * [UI](en/ui.md)
 
-## Articles
-
-* [Turn MyBee instance into GitHub self-hosted runner](en/gh_runners.md)
-
 ## Sponsor this project
 
 If you like this project, want to say thank and support its development:

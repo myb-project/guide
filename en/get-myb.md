@@ -4,7 +4,11 @@ Most of the settings are made after the system is installed. After rebooting, yo
 
 ## Interactive installer
 
-You can get the installation ISO image (CD/DVD) or IMG image (USB memstick) from the official website [in the Downloads section](https://myb.convectix.com/download/).
+You can get the installation ISO image (CD/DVD) or IMG image (USB memstick):
+
+* [mybee-latest.iso](https://convectix.com/DL/mybee/mybee-latest.iso)
+
+* [mybee-latest.img](https://convectix.com/DL/mybee/mybee-latest.img)
 
 :bangbang: | :warning: Please note! Use the UEFI boot method when installing MyBee.
 :---: | :---
